@@ -12,6 +12,7 @@ import 'package:google_fonts/google_fonts.dart';
 class TAppTheme {
   TAppTheme._();
 
+  // Light theme
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
@@ -28,6 +29,7 @@ class TAppTheme {
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
+  // Dark theme
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
