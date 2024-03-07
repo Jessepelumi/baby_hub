@@ -1,18 +1,13 @@
+import 'package:baby_hub/app.dart';
 import 'package:flutter/material.dart';
 
+// Entry point for the application
 void main() {
+  // Todo: add widget binding
+  // Todo: initialize local storage
+  // Todo: await splash
+  // Todo: initialize Firebase
+  // Todo: initialize Authentication
+
   runApp(const App());
-}
-
-class App extends StatelessWidget {
-  const App({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      themeMode: ThemeMode.system,
-      theme: ThemeData(),
-      darkTheme: ThemeData(),
-    );
-  }
 }
