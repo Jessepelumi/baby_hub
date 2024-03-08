@@ -115,7 +115,7 @@ class TDeviceUtils {
     return Platform.isAndroid;
   }
 
-  static void LaunchUrl(String url) async {
+  static void launchUrl(String url) async {
     if (await canLaunchUrlString(url)) {
       await launchUrlString(url);
     } else {

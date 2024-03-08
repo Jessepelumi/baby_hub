@@ -5,7 +5,6 @@ import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onbo
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -37,13 +36,13 @@ class OnBoardingScreen extends StatelessWidget {
           ),
 
           // ship button
-          OnBoardingSkip(),
+          const OnBoardingSkip(),
 
           // page navigation
-          OnBoardingDotNavigation(),
+          const OnBoardingDotNavigation(),
 
           // circular button
-          OnBoadingCircularButton(),
+          const OnBoadingCircularButton(),
         ],
       ),
     );

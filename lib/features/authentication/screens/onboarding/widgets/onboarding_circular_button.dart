@@ -19,11 +19,11 @@ class OnBoadingCircularButton extends StatelessWidget {
       right: TSizes.defaultSpace,
       child: ElevatedButton(
         onPressed: () {},
-        child: const Icon(Iconsax.arrow_right3),
         style: ElevatedButton.styleFrom(
-          shape: CircleBorder(),
+          shape: const CircleBorder(),
           backgroundColor: dark ? TColors.primary : Colors.black,
         ),
+        child: const Icon(Iconsax.arrow_right3),
       ),
     );
   }
