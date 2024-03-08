@@ -1,3 +1,4 @@
+import 'package:baby_hub/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/device/device_utility.dart';
@@ -12,13 +13,15 @@ class OnBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = OnBoardingController.instance;
     final dark = THelperFunctions.isDarkMode(context);
 
     return Positioned(
       bottom: TDeviceUtils.getBottomNavigationBarHeight() + 25,
       left: TSizes.defaultSpace,
       child: SmoothPageIndicator(
-        controller: PageController(),
+        controller: controller.pageController,
+        onDotClicked: controller.dotNavigationClick,
         count: 3,
         effect: ExpandingDotsEffect(
           activeDotColor: dark ? TColors.light : TColors.dark,

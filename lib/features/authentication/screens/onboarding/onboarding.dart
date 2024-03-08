@@ -1,3 +1,4 @@
+import 'package:baby_hub/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_circular_button.dart';
 import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
@@ -5,17 +6,22 @@ import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onbo
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+
     return Scaffold(
       body: Stack(
         children: [
           // horizontal scrollable pages
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingWidget(
                 image: TImageStrings.searching,

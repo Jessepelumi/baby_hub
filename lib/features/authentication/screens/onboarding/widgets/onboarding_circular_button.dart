@@ -1,3 +1,4 @@
+import 'package:baby_hub/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/device/device_utility.dart';
@@ -18,7 +19,7 @@ class OnBoadingCircularButton extends StatelessWidget {
       bottom: TDeviceUtils.getBottomNavigationBarHeight(),
       right: TSizes.defaultSpace,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () => OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
           backgroundColor: dark ? TColors.primary : Colors.black,
