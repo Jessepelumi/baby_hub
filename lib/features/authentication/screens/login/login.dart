@@ -4,9 +4,7 @@ import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -27,7 +25,7 @@ class LoginScreen extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image(
+                  const Image(
                     height: 150,
                     image: AssetImage(TImageStrings.appLogo),
                   ),
@@ -55,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       // email
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.message),
                           labelText: TTextStrings.email,
                         ),
@@ -66,7 +64,7 @@ class LoginScreen extends StatelessWidget {
 
                       // password
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.password_check),
                           labelText: TTextStrings.password,
                           suffixIcon: Icon(Iconsax.eye_slash),
@@ -109,7 +107,7 @@ class LoginScreen extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {},
-                          child: Text(TTextStrings.signin),
+                          child: const Text(TTextStrings.signin),
                         ),
                       ),
                       const SizedBox(
@@ -121,14 +119,14 @@ class LoginScreen extends StatelessWidget {
                         width: double.infinity,
                         child: OutlinedButton(
                           onPressed: () {},
-                          child: Text(TTextStrings.createAccount),
+                          child: const Text(TTextStrings.createAccount),
                         ),
                       ),
                     ],
                   ),
                 ),
               ),
-              
+
               // divider
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
