@@ -1,20 +1,18 @@
 import 'package:baby_hub/common/styles/spacing_styles.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/image_strings.dart';
+import 'package:baby_hub/common/widgets/login_signup/form_divider.dart';
+import 'package:baby_hub/common/widgets/login_signup/social_buttons.dart';
+import 'package:baby_hub/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:baby_hub/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -22,178 +20,17 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               // logo, title & subtitle
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Image(
-                    height: 150,
-                    image: AssetImage(TImageStrings.appLogo),
-                  ),
-                  Text(
-                    TTextStrings.loginTitle,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                  const SizedBox(
-                    height: TSizes.sm,
-                  ),
-                  Text(
-                    TTextStrings.loginSubTitle,
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ],
-              ),
+              LoginHeader(),
 
               // form
-              Form(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: TSizes.spaceBtwSections,
-                  ),
-                  child: Column(
-                    children: [
-                      // email
-                      TextFormField(
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Iconsax.message),
-                          labelText: TTextStrings.email,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwInputFields,
-                      ),
-
-                      // password
-                      TextFormField(
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Iconsax.password_check),
-                          labelText: TTextStrings.password,
-                          suffixIcon: Icon(Iconsax.eye_slash),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwInputFields / 2,
-                      ),
-
-                      // remember me & forget password
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          // remember me
-                          Row(
-                            children: [
-                              Checkbox(
-                                value: true,
-                                onChanged: (value) {},
-                              ),
-                              const Text(
-                                TTextStrings.rememberMe,
-                              ),
-                            ],
-                          ),
-
-                          // forget password
-                          TextButton(
-                            onPressed: () {},
-                            child: const Text(TTextStrings.forgotPassword),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwSections,
-                      ),
-
-                      // sign in button
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text(TTextStrings.signin),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwItems,
-                      ),
-
-                      // create an account button
-                      SizedBox(
-                        width: double.infinity,
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          child: const Text(TTextStrings.createAccount),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              LoginForm(),
 
               // divider
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    child: Divider(
-                      color: dark ? TColors.darkGrey : TColors.grey,
-                      thickness: 0.5,
-                      indent: 60,
-                      endIndent: 5,
-                    ),
-                  ),
-                  Text(
-                    TTextStrings.orSigninWith.capitalize!,
-                    style: Theme.of(context).textTheme.labelMedium,
-                  ),
-                  Flexible(
-                    child: Divider(
-                      color: dark ? TColors.darkGrey : TColors.grey,
-                      thickness: 0.5,
-                      indent: 5,
-                      endIndent: 60,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: TSizes.spaceBtwSections,
-              ),
+              FormDivider(dividerText: TTextStrings.orSigninWith.capitalize!),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // footer
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(color: TColors.grey),
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Image(
-                        width: TSizes.iconMd,
-                        height: TSizes.iconMd,
-                        image: AssetImage(TImageStrings.googleLogo),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: TSizes.spaceBtwItems,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(color: TColors.grey),
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Image(
-                        width: TSizes.iconMd,
-                        height: TSizes.iconMd,
-                        image: AssetImage(TImageStrings.facebookLogo),
-                      ),
-                    ),
-                  ),
-                ],
-              )
+              SocialButtons()
             ],
           ),
         ),
