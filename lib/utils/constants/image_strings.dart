@@ -13,4 +13,9 @@ class TImageStrings {
       "assets/images/on_boarding_images/shopping.gif";
   static const String delivery =
       "assets/images/on_boarding_images/delivery.gif";
+
+  // Animations
+  static const String paid = "assets/images/animations/paid.gif";
+  static const String success = "assets/images/animations/success.gif";
+  static const String verify = "assets/images/animations/verify.gif";
 }
