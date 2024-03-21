@@ -17,7 +17,7 @@ class TTextStrings {
   static const String loginSubTitle =
       "Discover Limitless Choices and Unmatched Convenience";
   static const String signupTitle = "Let's create your account";
-  static const String forgetPasswordTitle = "Forger password";
+  static const String forgetPasswordTitle = "Forget password";
   static const String forgotPasswordSubTitle =
       "Enter your email and we will send you a password reset link";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
