@@ -54,6 +54,7 @@ class TTextStrings {
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
+  static const String tcontinue = "Continue";
 
   // Home
   static const String homeAppBarTitle = "Good day for shopping";
