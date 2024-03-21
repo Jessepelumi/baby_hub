@@ -43,6 +43,7 @@ class TTextStrings {
   static const String phoneNo = "Phone Number";
   static const String rememberMe = "Remember Me";
   static const String forgotPassword = "Forgot Password?";
+  static const String submit = "Submit";
   static const String signin = "Sign In";
   static const String createAccount = "Create Account";
   static const String orSigninWith = "or sign in with";
