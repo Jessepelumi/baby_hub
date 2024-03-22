@@ -56,6 +56,7 @@ class TTextStrings {
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
   static const String tcontinue = "Continue";
+  static const String done = "Done";
 
   // Home
   static const String homeAppBarTitle = "Good day for shopping";
