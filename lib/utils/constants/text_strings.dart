@@ -59,6 +59,6 @@ class TTextStrings {
   static const String done = "Done";
 
   // Home
-  static const String homeAppBarTitle = "Good day for shopping";
+  static const String homeAppBarTitle = "Welcome";
   static const String homeAppBarSubTitle = "John Doe";
 }
