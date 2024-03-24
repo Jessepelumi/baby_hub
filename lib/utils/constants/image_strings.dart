@@ -13,6 +13,8 @@ class TImageStrings {
       "assets/images/on_boarding_images/shopping.gif";
   static const String delivery =
       "assets/images/on_boarding_images/delivery.gif";
+  static const String test =
+      "assets/images/on_boarding_images/google.png";
 
   // Animations
   static const String paid = "assets/images/animations/paid.gif";
