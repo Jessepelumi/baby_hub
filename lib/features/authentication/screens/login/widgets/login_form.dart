@@ -1,5 +1,7 @@
 import 'package:baby_hub/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:baby_hub/features/authentication/screens/signup/signup.dart';
+import 'package:baby_hub/features/shop/screens/home/home.dart';
+import 'package:baby_hub/navigation_menu.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +32,7 @@ class LoginForm extends StatelessWidget {
             const SizedBox(
               height: TSizes.spaceBtwInputFields,
             ),
-    
+
             // password
             TextFormField(
               decoration: const InputDecoration(
@@ -42,7 +44,7 @@ class LoginForm extends StatelessWidget {
             const SizedBox(
               height: TSizes.spaceBtwInputFields / 2,
             ),
-    
+
             // remember me & forget password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,7 +61,7 @@ class LoginForm extends StatelessWidget {
                     ),
                   ],
                 ),
-    
+
                 // forget password
                 TextButton(
                   onPressed: () => Get.to(() => const ForgotPassword()),
@@ -70,19 +72,19 @@ class LoginForm extends StatelessWidget {
             const SizedBox(
               height: TSizes.spaceBtwSections,
             ),
-    
+
             // sign in button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => NavigationMenu()),
                 child: const Text(TTextStrings.signin),
               ),
             ),
             const SizedBox(
               height: TSizes.spaceBtwItems,
             ),
-    
+
             // create an account button
             SizedBox(
               width: double.infinity,
