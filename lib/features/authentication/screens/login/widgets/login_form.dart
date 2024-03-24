@@ -1,6 +1,5 @@
 import 'package:baby_hub/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:baby_hub/features/authentication/screens/signup/signup.dart';
-import 'package:baby_hub/features/shop/screens/home/home.dart';
 import 'package:baby_hub/navigation_menu.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
