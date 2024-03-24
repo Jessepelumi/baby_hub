@@ -1,4 +1,5 @@
 import 'package:baby_hub/common/widgets/image_text/vertical_image_text.dart';
+import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class HomeCategories extends StatelessWidget {
@@ -12,12 +13,12 @@ class HomeCategories extends StatelessWidget {
       height: 80,
       child: ListView.builder(
         shrinkWrap: true,
-        itemCount: 6,
+        itemCount: 10,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
           return VerticalImageText(
-            image: "",
-            title: "",
+            image: TImageStrings.test,
+            title: "Test",
             onTap: () {},
           );
         },
