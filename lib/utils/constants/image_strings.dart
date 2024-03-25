@@ -15,6 +15,7 @@ class TImageStrings {
       "assets/images/on_boarding_images/delivery.gif";
   static const String test =
       "assets/images/on_boarding_images/google.png";
+  // ignore: constant_identifier_names
   static const String product_test =
       "assets/images/on_boarding_images/product_test.jpeg";
 

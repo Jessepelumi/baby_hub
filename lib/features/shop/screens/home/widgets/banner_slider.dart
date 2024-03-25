@@ -6,7 +6,6 @@ import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 class BannerSlider extends StatelessWidget {
   const BannerSlider({
@@ -40,7 +39,7 @@ class BannerSlider extends StatelessWidget {
                   CicularContainer(
                     width: 20,
                     height: 5,
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     backgroundColor: controller.carouselCurrentIndex.value == i
                         ? TColors.primary
                         : TColors.grey,
