@@ -46,6 +46,7 @@ class ProductCardVertical extends StatelessWidget {
                   // Sale tag
                   Positioned(
                     top: 12,
+                    left: 5,
                     child: RoundedContainer(
                       radius: TSizes.sm,
                       backgroundColor: TColors.secondary.withOpacity(0.8),
@@ -65,10 +66,12 @@ class ProductCardVertical extends StatelessWidget {
 
                   // Favourite icon
                   const Positioned(
-                    top: 0,
-                    right: 0,
+                    top: 5,
+                    right: 5,
                     child: HeartIconWidget(
                       icon: Iconsax.heart5,
+                      width: TSizes.iconLg,
+                      height: TSizes.iconLg,
                     ),
                   )
                 ],
@@ -106,39 +109,44 @@ class ProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-
-                  // Purchase
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Price
-                      ProductPriceText(price: "35.0"),
-
-                      // Add to cart
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(TSizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: TColors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
+            ),
+
+            // Spacer
+            Spacer(),
+
+            // Purchase
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                Padding(
+                  padding: const EdgeInsets.only(left: TSizes.sm),
+                  child: ProductPriceText(price: "35.0"),
+                ),
+
+                // Add to cart
+                Container(
+                  decoration: const BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: TColors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
