@@ -8,7 +8,7 @@ class HeartIconWidget extends StatelessWidget {
     super.key,
     this.width,
     this.height,
-    this.size = TSizes.lg,
+    this.size = TSizes.iconSm,
     required this.icon,
     this.color,
     this.backgroundColor,
