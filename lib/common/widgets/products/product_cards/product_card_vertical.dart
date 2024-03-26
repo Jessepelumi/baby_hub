@@ -3,6 +3,7 @@ import 'package:baby_hub/common/widgets/custom/container/rounded_container.dart'
 import 'package:baby_hub/common/widgets/icons/heart_icon.dart';
 import 'package:baby_hub/common/widgets/images/rounded_banner_image.dart';
 import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:baby_hub/common/widgets/texts/brand_title_text_verified.dart';
 import 'package:baby_hub/common/widgets/texts/product_title_text.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
@@ -93,22 +94,7 @@ class ProductCardVertical extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwItems / 2),
 
                   // Brand name
-                  Row(
-                    children: [
-                      Text(
-                        "JEOLAD",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleTextVerified(title: "JEOLAD"),
                 ],
               ),
             ),
