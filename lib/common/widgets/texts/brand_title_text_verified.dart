@@ -3,7 +3,6 @@ import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/enums.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class BrandTitleTextVerified extends StatelessWidget {
   const BrandTitleTextVerified({
@@ -37,11 +36,6 @@ class BrandTitleTextVerified extends StatelessWidget {
           ),
         ),
         const SizedBox(width: TSizes.xs),
-        Icon(
-          Iconsax.verify5,
-          color: iconColor,
-          size: TSizes.iconXs,
-        ),
       ],
     );
   }
