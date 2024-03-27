@@ -46,7 +46,7 @@ class Searchbar extends StatelessWidget {
             children: [
               Icon(
                 icon,
-                color: TColors.darkerGrey,
+                color: dark ? TColors.white : TColors.darkerGrey,
               ),
               const SizedBox(width: TSizes.spaceBtwItems),
               Text(
