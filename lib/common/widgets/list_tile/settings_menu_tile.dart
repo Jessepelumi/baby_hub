@@ -8,13 +8,13 @@ class SettingMenuTile extends StatelessWidget {
     required this.title,
     required this.subTitle,
     this.trailing,
-    required this.onTap,
+    this.onTap,
   });
 
   final IconData icon;
   final String title, subTitle;
   final Widget? trailing;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
