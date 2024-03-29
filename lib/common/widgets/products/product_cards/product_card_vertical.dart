@@ -81,17 +81,17 @@ class ProductCardVertical extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwItems / 2),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: TSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: TSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Product title
-                  const ProductTitleText(
+                  ProductTitleText(
                     title: "JEOLAD Baby Shoe",
                     smallSize: true,
                   ),
-                  const SizedBox(height: TSizes.spaceBtwItems / 2),
+                  SizedBox(height: TSizes.spaceBtwItems / 2),
 
                   // Brand name
                   BrandTitleTextVerified(title: "JEOLAD"),
@@ -100,15 +100,15 @@ class ProductCardVertical extends StatelessWidget {
             ),
 
             // Spacer
-            Spacer(),
+            const Spacer(),
 
             // Purchase
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 // Price
-                Padding(
-                  padding: const EdgeInsets.only(left: TSizes.sm),
+                const Padding(
+                  padding: EdgeInsets.only(left: TSizes.sm),
                   child: ProductPriceText(price: "35.0"),
                 ),
 

@@ -47,19 +47,19 @@ class StoreScreen extends StatelessWidget {
 
                 // Output widgets
                 flexibleSpace: Padding(
-                  padding: EdgeInsets.all(TSizes.defaultSpace),
+                  padding: const EdgeInsets.all(TSizes.defaultSpace),
                   child: ListView(
                     shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     children: [
-                      SizedBox(height: TSizes.spaceBtwItems),
-                      Searchbar(
+                      const SizedBox(height: TSizes.spaceBtwItems),
+                      const Searchbar(
                         text: "Search in Store",
                         showBorder: true,
                         showBackground: false,
                         padding: EdgeInsets.zero,
                       ),
-                      SizedBox(height: TSizes.spaceBtwSections),
+                      const SizedBox(height: TSizes.spaceBtwSections),
 
                       // Featured brands
                       SectionHeading(
@@ -73,7 +73,7 @@ class StoreScreen extends StatelessWidget {
                         itemCount: 4,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
-                          return BrandCard(showBorder: true);
+                          return const BrandCard(showBorder: true);
                         },
                       ),
                     ],
@@ -81,7 +81,7 @@ class StoreScreen extends StatelessWidget {
                 ),
 
                 // Tab bar
-                bottom: CustomTabBar(
+                bottom: const CustomTabBar(
                   tabs: [
                     Tab(child: Text("Fashion")),
                     Tab(child: Text("Sports")),
@@ -95,7 +95,7 @@ class StoreScreen extends StatelessWidget {
           },
 
           // Body - Tabs
-          body: TabBarView(
+          body: const TabBarView(
             children: [
               CategoryTab(),
               CategoryTab(),
