@@ -1,3 +1,4 @@
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class SectionHeading extends StatelessWidget {
@@ -33,6 +34,9 @@ class SectionHeading extends StatelessWidget {
           TextButton(
             onPressed: onPressed,
             child: Text(buttonTitle),
+            style: TextButton.styleFrom(
+              foregroundColor: TColors.primary,
+            ),
           ),
       ],
     );
