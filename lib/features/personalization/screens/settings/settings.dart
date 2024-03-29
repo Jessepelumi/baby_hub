@@ -33,7 +33,7 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // User profile card
-                  UserProfileTile(),
+                  const UserProfileTile(),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
@@ -41,11 +41,11 @@ class SettingsScreen extends StatelessWidget {
 
             // Body
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   // Account settings
-                  SectionHeading(
+                  const SectionHeading(
                     title: "Account Settings",
                     showActionButton: false,
                   ),
@@ -96,12 +96,12 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   // App settings
-                  SizedBox(height: TSizes.spaceBtwSections),
-                  SectionHeading(
+                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SectionHeading(
                     title: "App Settings",
                     showActionButton: false,
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems),
+                  const SizedBox(height: TSizes.spaceBtwItems),
                   SettingMenuTile(
                     icon: Iconsax.document_upload,
                     title: "Load Data",
@@ -145,10 +145,10 @@ class SettingsScreen extends StatelessWidget {
                     width: double.infinity,
                     child: OutlinedButton(
                       onPressed: () {},
-                      child: const Text("Logout"),
                       style: OutlinedButton.styleFrom(
-                        side: BorderSide(color: TColors.primary),
+                        side: const BorderSide(color: TColors.primary),
                       ),
+                      child: const Text("Logout"),
                     ),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections * 1.5),

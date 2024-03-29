@@ -24,7 +24,7 @@ class WishlistScreen extends StatelessWidget {
         actions: [
           HeartIconWidget(
             icon: Iconsax.add,
-            onPressed: () => Get.to(HomeScreen()),
+            onPressed: () => Get.to(const HomeScreen()),
             color: THelperFunctions.isDarkMode(context)
                 ? TColors.white
                 : TColors.dark,
@@ -33,12 +33,12 @@ class WishlistScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               GridLayoutWIdget(
                 itemCount: 6,
-                itemBuilder: (_, index) => ProductCardVertical(),
+                itemBuilder: (_, index) => const ProductCardVertical(),
               ),
             ],
           ),

@@ -33,10 +33,10 @@ class SectionHeading extends StatelessWidget {
         if (showActionButton)
           TextButton(
             onPressed: onPressed,
-            child: Text(buttonTitle),
             style: TextButton.styleFrom(
               foregroundColor: TColors.primary,
             ),
+            child: Text(buttonTitle),
           ),
       ],
     );

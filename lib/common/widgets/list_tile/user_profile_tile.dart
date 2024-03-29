@@ -12,7 +12,7 @@ class UserProfileTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircularImage(
+      leading: const CircularImage(
         image: TImageStrings.profile,
         width: 50,
         height: 50,
@@ -34,7 +34,7 @@ class UserProfileTile extends StatelessWidget {
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Iconsax.edit,
           color: TColors.white,
         ),
