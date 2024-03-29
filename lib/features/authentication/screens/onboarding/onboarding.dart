@@ -41,7 +41,7 @@ class OnBoardingScreen extends StatelessWidget {
             ],
           ),
 
-          // ship button
+          // skip button
           const OnBoardingSkip(),
 
           // page navigation
