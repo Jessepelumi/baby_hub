@@ -17,6 +17,8 @@ class TImageStrings {
   // ignore: constant_identifier_names
   static const String product_test =
       "assets/images/on_boarding_images/test_product.jpeg";
+  static const String profile =
+      "assets/images/on_boarding_images/profile.png";
 
   // Animations
   static const String paid = "assets/images/animations/paid.gif";
