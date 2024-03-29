@@ -1,3 +1,4 @@
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
@@ -41,7 +42,7 @@ class ResetPassword extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   child: const Text(TTextStrings.done),
                 ),
               ),
@@ -49,8 +50,11 @@ class ResetPassword extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                  onPressed: (){},
-                  child: const Text(TTextStrings.resendEmail),
+                  onPressed: () {},
+                  child: const Text(
+                    TTextStrings.resendEmail,
+                    style: TextStyle(color: TColors.primary),
+                  ),
                 ),
               ),
             ],

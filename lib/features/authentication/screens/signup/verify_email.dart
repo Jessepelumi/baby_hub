@@ -1,5 +1,6 @@
 import 'package:baby_hub/common/widgets/success_screen/sucess_screen.dart';
 import 'package:baby_hub/features/authentication/screens/login/login.dart';
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
@@ -77,7 +78,10 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
-                  child: const Text(TTextStrings.resendEmail),
+                  child: const Text(
+                    TTextStrings.resendEmail,
+                    style: TextStyle(color: TColors.primary),
+                  ),
                 ),
               ),
             ],
