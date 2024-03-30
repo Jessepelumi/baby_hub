@@ -25,25 +25,79 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
           backgroundColor: darkMode ? TColors.black : TColors.white,
-          indicatorColor: darkMode
-              ? TColors.white.withOpacity(0.1)
-              : TColors.black.withOpacity(0.1),
-          destinations: const [
-            NavigationDestination(
-              icon: Icon(Iconsax.home),
-              label: "Home",
+          indicatorColor: Colors.transparent,
+          destinations: [
+            NavigationBarTheme(
+              data: NavigationBarThemeData(
+                labelTextStyle: MaterialStateProperty.resolveWith(
+                    (states) => states.contains(MaterialState.selected)
+                        ? TextStyle(color: TColors.primary)
+                        : darkMode
+                            ? TextStyle(color: TColors.white)
+                            : TextStyle(color: TColors.dark)),
+              ),
+              child: NavigationDestination(
+                icon: Icon(Iconsax.home_24),
+                label: "Home",
+                selectedIcon: Icon(
+                  Iconsax.home_25,
+                  color: TColors.primary,
+                ),
+              ),
             ),
-            NavigationDestination(
-              icon: Icon(Iconsax.shop),
-              label: "Store",
+            NavigationBarTheme(
+              data: NavigationBarThemeData(
+                labelTextStyle: MaterialStateProperty.resolveWith(
+                    (states) => states.contains(MaterialState.selected)
+                        ? TextStyle(color: TColors.primary)
+                        : darkMode
+                            ? TextStyle(color: TColors.white)
+                            : TextStyle(color: TColors.dark)),
+              ),
+              child: NavigationDestination(
+                icon: Icon(Iconsax.shop4),
+                label: "Store",
+                selectedIcon: Icon(
+                  Iconsax.shop5,
+                  color: TColors.primary,
+                ),
+              ),
             ),
-            NavigationDestination(
-              icon: Icon(Iconsax.heart),
-              label: "Wishlist",
+            NavigationBarTheme(
+              data: NavigationBarThemeData(
+                labelTextStyle: MaterialStateProperty.resolveWith(
+                    (states) => states.contains(MaterialState.selected)
+                        ? TextStyle(color: TColors.primary)
+                        : darkMode
+                            ? TextStyle(color: TColors.white)
+                            : TextStyle(color: TColors.dark)),
+              ),
+              child: NavigationDestination(
+                icon: Icon(Iconsax.heart4),
+                label: "Wishlist",
+                selectedIcon: Icon(
+                  Iconsax.heart5,
+                  color: TColors.primary,
+                ),
+              ),
             ),
-            NavigationDestination(
-              icon: Icon(Iconsax.profile_add),
-              label: "Profile",
+            NavigationBarTheme(
+              data: NavigationBarThemeData(
+                labelTextStyle: MaterialStateProperty.resolveWith(
+                    (states) => states.contains(MaterialState.selected)
+                        ? TextStyle(color: TColors.primary)
+                        : darkMode
+                            ? TextStyle(color: TColors.white)
+                            : TextStyle(color: TColors.dark)),
+              ),
+              child: NavigationDestination(
+                icon: Icon(Iconsax.profile_tick4),
+                label: "Profile",
+                selectedIcon: Icon(
+                  Iconsax.profile_tick5,
+                  color: TColors.primary,
+                ),
+              ),
             ),
           ],
         ),
