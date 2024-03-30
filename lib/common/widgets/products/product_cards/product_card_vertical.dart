@@ -114,7 +114,7 @@ class ProductCardVertical extends StatelessWidget {
 
                 // Add to cart
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: TColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(TSizes.cardRadiusMd),

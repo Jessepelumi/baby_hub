@@ -31,12 +31,12 @@ class NavigationMenu extends StatelessWidget {
               data: NavigationBarThemeData(
                 labelTextStyle: MaterialStateProperty.resolveWith(
                     (states) => states.contains(MaterialState.selected)
-                        ? TextStyle(color: TColors.primary)
+                        ? const TextStyle(color: TColors.primary)
                         : darkMode
-                            ? TextStyle(color: TColors.white)
-                            : TextStyle(color: TColors.dark)),
+                            ? const TextStyle(color: TColors.white)
+                            : const TextStyle(color: TColors.dark)),
               ),
-              child: NavigationDestination(
+              child: const NavigationDestination(
                 icon: Icon(Iconsax.home_24),
                 label: "Home",
                 selectedIcon: Icon(
@@ -49,12 +49,12 @@ class NavigationMenu extends StatelessWidget {
               data: NavigationBarThemeData(
                 labelTextStyle: MaterialStateProperty.resolveWith(
                     (states) => states.contains(MaterialState.selected)
-                        ? TextStyle(color: TColors.primary)
+                        ? const TextStyle(color: TColors.primary)
                         : darkMode
-                            ? TextStyle(color: TColors.white)
-                            : TextStyle(color: TColors.dark)),
+                            ? const TextStyle(color: TColors.white)
+                            : const TextStyle(color: TColors.dark)),
               ),
-              child: NavigationDestination(
+              child: const NavigationDestination(
                 icon: Icon(Iconsax.shop4),
                 label: "Store",
                 selectedIcon: Icon(
@@ -67,12 +67,12 @@ class NavigationMenu extends StatelessWidget {
               data: NavigationBarThemeData(
                 labelTextStyle: MaterialStateProperty.resolveWith(
                     (states) => states.contains(MaterialState.selected)
-                        ? TextStyle(color: TColors.primary)
+                        ? const TextStyle(color: TColors.primary)
                         : darkMode
-                            ? TextStyle(color: TColors.white)
-                            : TextStyle(color: TColors.dark)),
+                            ? const TextStyle(color: TColors.white)
+                            : const TextStyle(color: TColors.dark)),
               ),
-              child: NavigationDestination(
+              child: const NavigationDestination(
                 icon: Icon(Iconsax.heart4),
                 label: "Wishlist",
                 selectedIcon: Icon(
@@ -85,12 +85,12 @@ class NavigationMenu extends StatelessWidget {
               data: NavigationBarThemeData(
                 labelTextStyle: MaterialStateProperty.resolveWith(
                     (states) => states.contains(MaterialState.selected)
-                        ? TextStyle(color: TColors.primary)
+                        ? const TextStyle(color: TColors.primary)
                         : darkMode
-                            ? TextStyle(color: TColors.white)
-                            : TextStyle(color: TColors.dark)),
+                            ? const TextStyle(color: TColors.white)
+                            : const TextStyle(color: TColors.dark)),
               ),
-              child: NavigationDestination(
+              child: const NavigationDestination(
                 icon: Icon(Iconsax.profile_tick4),
                 label: "Profile",
                 selectedIcon: Icon(
