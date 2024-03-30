@@ -28,6 +28,9 @@ class WishlistScreen extends StatelessWidget {
             color: THelperFunctions.isDarkMode(context)
                 ? TColors.white
                 : TColors.dark,
+            backgroundColor: THelperFunctions.isDarkMode(context)
+                ? TColors.white.withOpacity(0.2)
+                : TColors.black.withOpacity(0.2),
           ),
         ],
       ),
