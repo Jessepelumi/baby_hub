@@ -3,9 +3,11 @@ import 'package:baby_hub/common/widgets/custom/container/primary_header_containe
 import 'package:baby_hub/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:baby_hub/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:baby_hub/common/widgets/texts/section_heading.dart';
+import 'package:baby_hub/features/personalization/screens/profile/profile.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -33,7 +35,9 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // User profile card
-                  const UserProfileTile(),
+                  UserProfileTile(
+                    onPressed: () => Get.to(() => ProfileScreen()),
+                  ),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),

@@ -7,7 +7,10 @@ import 'package:iconsax/iconsax.dart';
 class UserProfileTile extends StatelessWidget {
   const UserProfileTile({
     super.key,
+    required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +30,11 @@ class UserProfileTile extends StatelessWidget {
       ),
       subtitle: Text(
         "penofiliajohn@gmail.com",
-        style: Theme.of(context)
-            .textTheme
-            .bodyMedium!
-            .apply(color: TColors.white),
+        style:
+            Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(
           Iconsax.edit,
           color: TColors.white,
