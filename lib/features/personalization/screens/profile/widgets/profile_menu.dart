@@ -1,17 +1,16 @@
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({
     super.key,
-    required this.icon,
+    this.icon,
     required this.onPressed,
     required this.title,
     required this.value,
   });
 
-  final IconData icon;
+  final IconData? icon;
   final VoidCallback onPressed;
   final String title, value;
 
@@ -20,7 +19,8 @@ class ProfileMenu extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwItems / 1.5),
+        padding:
+            const EdgeInsets.symmetric(vertical: TSizes.spaceBtwItems / 1.5),
         child: Row(
           children: [
             Expanded(
@@ -40,7 +40,7 @@ class ProfileMenu extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: Icon(Iconsax.arrow_right_34, size: 18),
+              child: Icon(icon, size: 18),
             ),
           ],
         ),
