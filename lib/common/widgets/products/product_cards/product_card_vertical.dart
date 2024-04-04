@@ -5,11 +5,13 @@ import 'package:baby_hub/common/widgets/images/rounded_banner_image.dart';
 import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
 import 'package:baby_hub/common/widgets/texts/brand_title_text_verified.dart';
 import 'package:baby_hub/common/widgets/texts/product_title_text.dart';
+import 'package:baby_hub/features/shop/screens/product/product_details.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -20,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
