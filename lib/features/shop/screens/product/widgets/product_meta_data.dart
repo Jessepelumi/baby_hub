@@ -3,6 +3,7 @@ import 'package:baby_hub/common/widgets/images/circular_image.dart';
 import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
 import 'package:baby_hub/common/widgets/texts/brand_title_text_verified.dart';
 import 'package:baby_hub/common/widgets/texts/product_title_text.dart';
+import 'package:baby_hub/localization/naira_symbol.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/enums.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
@@ -40,9 +41,17 @@ class ProductMetaData extends StatelessWidget {
             const SizedBox(width: TSizes.spaceBtwItems),
 
             // Price
-            ProductPriceText(price: "7800", lineThrough: true),
+            ProductPriceText(
+              currency: getNaira(),
+              price: "7800",
+              lineThrough: true,
+            ),
             const SizedBox(width: TSizes.spaceBtwItems),
-            ProductPriceText(price: "7100", isLarge: true),
+            ProductPriceText(
+              currency: getNaira(),
+              price: "7100",
+              isLarge: true,
+            ),
           ],
         ),
         SizedBox(height: TSizes.spaceBtwItems / 1.5),
