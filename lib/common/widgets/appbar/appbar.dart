@@ -1,3 +1,4 @@
+import 'package:baby_hub/common/widgets/custom/container/circular_container.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/device/device_utility.dart';
@@ -34,9 +35,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(
-                  Iconsax.arrow_left_24,
-                  color: dark ? TColors.white : TColors.dark,
+                icon: CicularContainer(
+                  backgroundColor: dark
+                      ? TColors.dark.withOpacity(0.5)
+                      : TColors.white.withOpacity(0.5),
+                  child: Icon(
+                    Iconsax.arrow_left_24,
+                    color: dark ? TColors.white : TColors.dark,
+                  ),
                 ))
             : leadingIcon != null
                 ? IconButton(
