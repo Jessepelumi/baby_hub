@@ -6,6 +6,7 @@ import 'package:baby_hub/common/widgets/products/product_cards/product_price_tex
 import 'package:baby_hub/common/widgets/texts/brand_title_text_verified.dart';
 import 'package:baby_hub/common/widgets/texts/product_title_text.dart';
 import 'package:baby_hub/features/shop/screens/product/product_details.dart';
+import 'package:baby_hub/localization/naira_symbol.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
@@ -109,9 +110,12 @@ class ProductCardVertical extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 // Price
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(left: TSizes.sm),
-                  child: ProductPriceText(price: "35.0"),
+                  child: ProductPriceText(
+                    price: "35.0",
+                    currency: getNaira(),
+                  ),
                 ),
 
                 // Add to cart
