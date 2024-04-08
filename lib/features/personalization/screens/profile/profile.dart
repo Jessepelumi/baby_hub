@@ -5,9 +5,7 @@ import 'package:baby_hub/features/personalization/screens/profile/widgets/profil
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -25,7 +23,7 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // Profile picture
@@ -33,14 +31,14 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    CircularImage(
+                    const CircularImage(
                       image: TImageStrings.profile,
                       width: 80,
                       height: 80,
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Edit profile picture",
                         style: TextStyle(color: TColors.primary),
                       ),
@@ -50,14 +48,14 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               // Details
-              SizedBox(height: TSizes.spaceBtwItems / 2),
-              Divider(),
-              SizedBox(height: TSizes.spaceBtwItems),
-              SectionHeading(
+              const SizedBox(height: TSizes.spaceBtwItems / 2),
+              const Divider(),
+              const SizedBox(height: TSizes.spaceBtwItems),
+              const SectionHeading(
                 title: "Profile Information",
                 showActionButton: false,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               // Profile information
               ProfileMenu(
@@ -74,9 +72,9 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               // Details
-              SizedBox(height: TSizes.spaceBtwItems / 2),
-              Divider(),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems / 2),
+              const Divider(),
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               // More info
               ProfileMenu(
@@ -98,13 +96,13 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               // Close button
-              SizedBox(height: TSizes.spaceBtwItems / 2),
-              Divider(),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems / 2),
+              const Divider(),
+              const SizedBox(height: TSizes.spaceBtwItems),
               Center(
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Close Account",
                     style: TextStyle(color: TColors.error),
                   ),

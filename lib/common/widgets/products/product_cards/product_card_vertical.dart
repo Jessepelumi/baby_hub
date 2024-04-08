@@ -23,7 +23,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () => Get.to(() => ProductDetails()),
+      onTap: () => Get.to(() => const ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -111,7 +111,7 @@ class ProductCardVertical extends StatelessWidget {
               children: [
                 // Price
                 Padding(
-                  padding: EdgeInsets.only(left: TSizes.sm),
+                  padding: const EdgeInsets.only(left: TSizes.sm),
                   child: ProductPriceText(
                     price: "35.0",
                     currency: getNaira(),

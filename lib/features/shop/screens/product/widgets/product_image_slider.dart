@@ -24,16 +24,16 @@ class ProductImageSlider extends StatelessWidget {
           itemCount: 6,
           shrinkWrap: true,
           scrollDirection: Axis.horizontal,
-          physics: AlwaysScrollableScrollPhysics(),
+          physics: const AlwaysScrollableScrollPhysics(),
           itemBuilder: (_, index) => RoundedBannerImage(
             imageUrl: TImageStrings.product_test,
             widht: 80,
             //fit: BoxFit.contain,
             backgroundColor: dark ? TColors.dark : TColors.white,
             border: Border.all(color: TColors.primary),
-            padding: EdgeInsets.all(TSizes.sm),
+            padding: const EdgeInsets.all(TSizes.sm),
           ),
-          separatorBuilder: (_, __) => SizedBox(
+          separatorBuilder: (_, __) => const SizedBox(
             width: TSizes.spaceBtwItems,
           ),
         ),

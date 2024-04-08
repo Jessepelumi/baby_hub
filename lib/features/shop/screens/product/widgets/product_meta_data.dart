@@ -54,17 +54,17 @@ class ProductMetaData extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
         // Title
-        ProductTitleText(title: "Unisex baby sneakers"),
-        SizedBox(height: TSizes.spaceBtwItems),
+        const ProductTitleText(title: "Unisex baby sneakers"),
+        const SizedBox(height: TSizes.spaceBtwItems),
 
         // Stock status
         Row(
           children: [
-            ProductTitleText(title: "Status"),
-            SizedBox(width: TSizes.spaceBtwItems),
+            const ProductTitleText(title: "Status"),
+            const SizedBox(width: TSizes.spaceBtwItems),
             Text("In stock",
                 style: Theme.of(context)
                     .textTheme
@@ -72,7 +72,7 @@ class ProductMetaData extends StatelessWidget {
                     .apply(color: TColors.error)),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
         // Brand
         Row(
@@ -83,8 +83,8 @@ class ProductMetaData extends StatelessWidget {
               height: 32,
               overlayColor: dark ? TColors.white : TColors.black,
             ),
-            SizedBox(width: TSizes.spaceBtwItems / 3.5),
-            BrandTitleTextVerified(
+            const SizedBox(width: TSizes.spaceBtwItems / 3.5),
+            const BrandTitleTextVerified(
               title: "JEOLAD",
               brandTextSize: TextSizes.medium,
             ),

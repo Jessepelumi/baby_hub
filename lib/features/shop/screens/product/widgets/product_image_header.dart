@@ -20,7 +20,7 @@ class ProductImageHeader extends StatelessWidget {
     return CurvedEdgesWidget(
       child: Container(
         color: dark ? TColors.darkerGrey : TColors.white,
-        child: Stack(
+        child: const Stack(
           children: [
             // Main image
             Image(image: AssetImage(TImageStrings.product_test)),
