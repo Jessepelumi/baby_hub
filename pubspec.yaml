@@ -32,6 +32,7 @@ dependencies:
 
   # product specific
   google_fonts: ^6.2.1
+  readmore: ^3.0.0
 
 # Development dependencies
 dev_dependencies:
