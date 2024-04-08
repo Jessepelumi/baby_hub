@@ -32,9 +32,9 @@ class CustomChoiceChip extends StatelessWidget {
                 height: 50,
                 backgroundColor: THelperFunctions.getColor(text)!)
             : null,
-        shape: isColor != null ? CircleBorder() : null,
-        labelPadding: isColor != null ? EdgeInsets.all(0) : null,
-        padding: isColor != null ? EdgeInsets.all(0) : null,
+        shape: isColor != null ? const CircleBorder() : null,
+        labelPadding: isColor != null ? const EdgeInsets.all(0) : null,
+        padding: isColor != null ? const EdgeInsets.all(0) : null,
         //selectedColor: Colors.green,
         backgroundColor:
             isColor != null ? THelperFunctions.getColor(text)! : null,

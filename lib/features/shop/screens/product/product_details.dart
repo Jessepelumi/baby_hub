@@ -18,16 +18,16 @@ class ProductDetails extends StatelessWidget {
     //final dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
-      bottomNavigationBar: BottomAddToCart(),
+      bottomNavigationBar: const BottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Product image header
-            ProductImageHeader(),
+            const ProductImageHeader(),
 
             // Product details
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 right: TSizes.defaultSpace,
                 left: TSizes.defaultSpace,
                 bottom: TSizes.defaultSpace,
@@ -35,29 +35,29 @@ class ProductDetails extends StatelessWidget {
               child: Column(
                 children: [
                   // Rating & share
-                  RatingAndShare(),
+                  const RatingAndShare(),
 
                   // Price, title, stock & brand
-                  ProductMetaData(),
+                  const ProductMetaData(),
 
                   // Attributes
-                  ProductAttributes(),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const ProductAttributes(),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Checkout button
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text("Checkout"),
+                      child: const Text("Checkout"),
                     ),
                   ),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Description
-                  SectionHeading(title: "Description", showActionButton: false),
-                  SizedBox(height: TSizes.spaceBtwItems),
-                  ReadMoreText(
+                  const SectionHeading(title: "Description", showActionButton: false),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  const ReadMoreText(
                     "The unisex baby sneakers form JEOLAD is made with love with focus of comfort. It delivers xoxo comfort to your toddler. It is practical and fits most outfits. It is a great choice to make that shows you priortize the comfort of your child over anythings else. ",
                     trimLines: 2,
                     trimMode: TrimMode.Line,
@@ -68,19 +68,19 @@ class ProductDetails extends StatelessWidget {
                     lessStyle:
                         TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems / 2),
+                  const SizedBox(height: TSizes.spaceBtwItems / 2),
 
                   // Reviews
                   const Divider(),
-                  SizedBox(height: TSizes.spaceBtwItems / 2),
+                  const SizedBox(height: TSizes.spaceBtwItems / 2),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      SectionHeading(
+                      const SectionHeading(
                           title: "Reviews (199)", showActionButton: false),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Iconsax.arrow_right_3),
+                        icon: const Icon(Iconsax.arrow_right_3),
                       ),
                     ],
                   ),

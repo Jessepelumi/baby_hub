@@ -13,13 +13,13 @@ class BottomAddToCart extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: TSizes.defaultSpace,
         vertical: TSizes.defaultSpace,
       ),
       decoration: BoxDecoration(
         color: dark ? TColors.darkerGrey : TColors.light,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(TSizes.cardRadiusLg),
           topRight: Radius.circular(TSizes.cardRadiusLg),
         ),
@@ -29,17 +29,17 @@ class BottomAddToCart extends StatelessWidget {
         children: [
           Row(
             children: [
-              HeartIconWidget(
+              const HeartIconWidget(
                 icon: Iconsax.minus,
                 backgroundColor: TColors.darkGrey,
                 width: 40,
                 height: 40,
                 color: TColors.white,
               ),
-              SizedBox(width: TSizes.spaceBtwItems),
+              const SizedBox(width: TSizes.spaceBtwItems),
               Text("2", style: Theme.of(context).textTheme.titleSmall),
-              SizedBox(width: TSizes.spaceBtwItems),
-              HeartIconWidget(
+              const SizedBox(width: TSizes.spaceBtwItems),
+              const HeartIconWidget(
                 icon: Iconsax.add,
                 backgroundColor: TColors.black,
                 width: 40,
@@ -50,11 +50,11 @@ class BottomAddToCart extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {},
-            child: Text("Add to Cart"),
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(TSizes.md),
+              padding: const EdgeInsets.all(TSizes.md),
               backgroundColor: TColors.primary,
             ),
+            child: const Text("Add to Cart"),
           ),
         ],
       ),
