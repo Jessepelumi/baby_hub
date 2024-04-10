@@ -26,7 +26,7 @@ class RatingProgressIndicator extends StatelessWidget {
             width: TDeviceUtils.getScreenWidth(context) * 0.8,
             child: LinearProgressIndicator(
               value: value,
-              minHeight: 5,
+              minHeight: 10,
               backgroundColor: TColors.grey,
               valueColor: AlwaysStoppedAnimation(TColors.primary),
               borderRadius: BorderRadius.circular(7),
