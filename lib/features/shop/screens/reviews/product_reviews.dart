@@ -43,8 +43,8 @@ class ProductReviews extends StatelessWidget {
                         RatingProgressIndicator(text: "5", value: 0.6),
                         RatingProgressIndicator(text: "4", value: 0.7),
                         RatingProgressIndicator(text: "3", value: 0.4),
-                        RatingProgressIndicator(text: "2", value: 0.2),
-                        RatingProgressIndicator(text: "1", value: 0.1),
+                        RatingProgressIndicator(text: "2", value: 0.3),
+                        RatingProgressIndicator(text: "1", value: 0.2),
                       ],
                     ),
                   )
