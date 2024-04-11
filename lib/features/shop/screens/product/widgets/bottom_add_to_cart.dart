@@ -57,7 +57,10 @@ class BottomAddToCart extends StatelessWidget {
             ),
             child: Text(
               "Add to Cart",
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .apply(color: TColors.white),
             ),
           ),
         ],

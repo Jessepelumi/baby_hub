@@ -5,6 +5,7 @@ import 'package:baby_hub/features/shop/screens/product/widgets/product_image_hea
 import 'package:baby_hub/features/shop/screens/product/widgets/product_meta_data.dart';
 import 'package:baby_hub/features/shop/screens/product/widgets/rating_and_share.dart';
 import 'package:baby_hub/features/shop/screens/reviews/product_reviews.dart';
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 //import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +54,10 @@ class ProductDetails extends StatelessWidget {
                       onPressed: () {},
                       child: Text(
                         "Checkout",
-                        style: Theme.of(context).textTheme.titleLarge,
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleLarge!
+                            .apply(color: TColors.white),
                       ),
                     ),
                   ),
