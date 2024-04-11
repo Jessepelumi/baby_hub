@@ -35,7 +35,7 @@ class LoginForm extends StatelessWidget {
                       color: dark ? TColors.grey : TColors.darkerGrey,
                       width: 2),
                 ),
-                focusedBorder: UnderlineInputBorder(
+                focusedBorder: const UnderlineInputBorder(
                   borderSide: BorderSide(color: TColors.primary, width: 2),
                 ),
               ),
@@ -47,13 +47,13 @@ class LoginForm extends StatelessWidget {
               decoration: InputDecoration(
                 //prefixIcon: Icon(Iconsax.password_check),
                 labelText: TTextStrings.password,
-                suffixIcon: Icon(Iconsax.eye_slash),
+                suffixIcon: const Icon(Iconsax.eye_slash),
                 enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(
                       color: dark ? TColors.grey : TColors.darkerGrey,
                       width: 2),
                 ),
-                focusedBorder: UnderlineInputBorder(
+                focusedBorder: const UnderlineInputBorder(
                   borderSide: BorderSide(color: TColors.primary, width: 2),
                 ),
               ),

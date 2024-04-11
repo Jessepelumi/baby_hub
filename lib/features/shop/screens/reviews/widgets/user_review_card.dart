@@ -21,9 +21,9 @@ class UserReviewCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                     backgroundImage: AssetImage(TImageStrings.profile)),
-                SizedBox(width: TSizes.spaceBtwItems),
+                const SizedBox(width: TSizes.spaceBtwItems),
                 Text(
                   "John Penofilia",
                   style: Theme.of(context).textTheme.titleLarge,
@@ -32,25 +32,25 @@ class UserReviewCard extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.more_vert),
+              icon: const Icon(Icons.more_vert),
             ),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems),
+        const SizedBox(height: TSizes.spaceBtwItems),
 
         // Review
         Row(
           children: [
-            RatingStarWidget(rating: 4),
-            SizedBox(width: TSizes.spaceBtwItems),
+            const RatingStarWidget(rating: 4),
+            const SizedBox(width: TSizes.spaceBtwItems),
             Text(
               "March 11, 2024",
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems),
-        ReadMoreText(
+        const SizedBox(height: TSizes.spaceBtwItems),
+        const ReadMoreText(
           "The app is beautiful and easy to use. Purchase was easy too. It was super easy looking through products.",
           trimLines: 1,
           trimMode: TrimMode.Line,
@@ -67,13 +67,13 @@ class UserReviewCard extends StatelessWidget {
             color: TColors.primary,
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwItems),
+        const SizedBox(height: TSizes.spaceBtwItems),
 
         // Company review
         RoundedContainer(
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
           child: Padding(
-            padding: EdgeInsets.all(TSizes.md),
+            padding: const EdgeInsets.all(TSizes.md),
             child: Column(
               children: [
                 Row(
@@ -89,8 +89,8 @@ class UserReviewCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwItems),
-                ReadMoreText(
+                const SizedBox(height: TSizes.spaceBtwItems),
+                const ReadMoreText(
                   "The app is beautiful and easy to use. Purchase was easy too. It was super easy looking through products.",
                   trimLines: 2,
                   trimMode: TrimMode.Line,
@@ -111,7 +111,7 @@ class UserReviewCard extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwSections),
+        const SizedBox(height: TSizes.spaceBtwSections),
       ],
     );
   }

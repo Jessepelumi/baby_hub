@@ -16,7 +16,7 @@ class AddressScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: TColors.primary,
         onPressed: () => Get.to(() => const AddNewAddress()),
-        child: Icon(
+        child: const Icon(
           Iconsax.add,
           color: TColors.white,
         ),
@@ -28,7 +28,7 @@ class AddressScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(

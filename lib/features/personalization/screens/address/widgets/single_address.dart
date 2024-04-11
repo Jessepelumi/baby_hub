@@ -3,7 +3,6 @@ import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SingleAddress extends StatelessWidget {
@@ -18,7 +17,7 @@ class SingleAddress extends StatelessWidget {
     return RoundedContainer(
       width: double.infinity,
       showBorder: true,
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       backgroundColor: selectedAddress
           ? TColors.primary.withOpacity(0.5)
           : Colors.transparent,
@@ -27,7 +26,7 @@ class SingleAddress extends StatelessWidget {
           : dark
               ? TColors.darkerGrey
               : TColors.grey,
-      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Stack(
         children: [
           Positioned(
@@ -51,14 +50,14 @@ class SingleAddress extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              SizedBox(height: TSizes.sm / 2),
-              Text(
+              const SizedBox(height: TSizes.sm / 2),
+              const Text(
                 "+2348125033916",
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
-              SizedBox(height: TSizes.sm / 2),
-              Text(
+              const SizedBox(height: TSizes.sm / 2),
+              const Text(
                 "Block B, Flat 16, Aderinsola High Rise, Victoria Island, Lagos, Nigeria.",
                 softWrap: true,
               ),

@@ -2,9 +2,7 @@ import 'package:baby_hub/common/widgets/appbar/appbar.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class AddNewAddress extends StatelessWidget {
   const AddNewAddress({super.key});
@@ -23,7 +21,7 @@ class AddNewAddress extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Form(
             child: Column(
               children: [
@@ -35,12 +33,12 @@ class AddNewAddress extends StatelessWidget {
                           color: dark ? TColors.grey : TColors.darkerGrey,
                           width: 2),
                     ),
-                    focusedBorder: UnderlineInputBorder(
+                    focusedBorder: const UnderlineInputBorder(
                       borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Phone Number",
@@ -49,12 +47,12 @@ class AddNewAddress extends StatelessWidget {
                           color: dark ? TColors.grey : TColors.darkerGrey,
                           width: 2),
                     ),
-                    focusedBorder: UnderlineInputBorder(
+                    focusedBorder: const UnderlineInputBorder(
                       borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
@@ -66,14 +64,14 @@ class AddNewAddress extends StatelessWidget {
                                 color: dark ? TColors.grey : TColors.darkerGrey,
                                 width: 2),
                           ),
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: const UnderlineInputBorder(
                             borderSide:
                                 BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
+                    const SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
                     Expanded(
                       child: TextFormField(
                         decoration: InputDecoration(
@@ -83,7 +81,7 @@ class AddNewAddress extends StatelessWidget {
                                 color: dark ? TColors.grey : TColors.darkerGrey,
                                 width: 2),
                           ),
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: const UnderlineInputBorder(
                             borderSide:
                                 BorderSide(color: TColors.primary, width: 2),
                           ),
@@ -92,7 +90,7 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
@@ -104,14 +102,14 @@ class AddNewAddress extends StatelessWidget {
                                 color: dark ? TColors.grey : TColors.darkerGrey,
                                 width: 2),
                           ),
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: const UnderlineInputBorder(
                             borderSide:
                                 BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
+                    const SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
                     Expanded(
                       child: TextFormField(
                         decoration: InputDecoration(
@@ -121,7 +119,7 @@ class AddNewAddress extends StatelessWidget {
                                 color: dark ? TColors.grey : TColors.darkerGrey,
                                 width: 2),
                           ),
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: const UnderlineInputBorder(
                             borderSide:
                                 BorderSide(color: TColors.primary, width: 2),
                           ),
@@ -130,7 +128,7 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Country",
@@ -139,12 +137,12 @@ class AddNewAddress extends StatelessWidget {
                           color: dark ? TColors.grey : TColors.darkerGrey,
                           width: 2),
                     ),
-                    focusedBorder: UnderlineInputBorder(
+                    focusedBorder: const UnderlineInputBorder(
                       borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
-                SizedBox(height: TSizes.defaultSpace * 2),
+                const SizedBox(height: TSizes.defaultSpace * 2),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

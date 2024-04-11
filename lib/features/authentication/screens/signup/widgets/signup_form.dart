@@ -33,7 +33,7 @@ class SignupForm extends StatelessWidget {
                           color: dark ? TColors.grey : TColors.darkerGrey,
                           width: 2),
                     ),
-                    focusedBorder: UnderlineInputBorder(
+                    focusedBorder: const UnderlineInputBorder(
                       borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
@@ -51,7 +51,7 @@ class SignupForm extends StatelessWidget {
                           color: dark ? TColors.grey : TColors.darkerGrey,
                           width: 2),
                     ),
-                    focusedBorder: UnderlineInputBorder(
+                    focusedBorder: const UnderlineInputBorder(
                       borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
@@ -70,7 +70,7 @@ class SignupForm extends StatelessWidget {
                 borderSide: BorderSide(
                     color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
               ),
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: TColors.primary, width: 2),
               ),
             ),
@@ -86,7 +86,7 @@ class SignupForm extends StatelessWidget {
                 borderSide: BorderSide(
                     color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
               ),
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: TColors.primary, width: 2),
               ),
             ),
@@ -102,7 +102,7 @@ class SignupForm extends StatelessWidget {
                 borderSide: BorderSide(
                     color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
               ),
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: TColors.primary, width: 2),
               ),
             ),
@@ -115,12 +115,12 @@ class SignupForm extends StatelessWidget {
             decoration: InputDecoration(
               labelText: TTextStrings.password,
               //prefixIcon: Icon(Iconsax.password_check),
-              suffixIcon: Icon(Iconsax.eye_slash),
+              suffixIcon: const Icon(Iconsax.eye_slash),
               enabledBorder: UnderlineInputBorder(
                 borderSide: BorderSide(
                     color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
               ),
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: TColors.primary, width: 2),
               ),
             ),

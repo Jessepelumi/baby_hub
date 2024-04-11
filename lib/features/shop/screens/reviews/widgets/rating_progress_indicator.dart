@@ -28,7 +28,7 @@ class RatingProgressIndicator extends StatelessWidget {
               value: value,
               minHeight: 10,
               backgroundColor: TColors.grey,
-              valueColor: AlwaysStoppedAnimation(TColors.primary),
+              valueColor: const AlwaysStoppedAnimation(TColors.primary),
               borderRadius: BorderRadius.circular(7),
             ),
           ),
