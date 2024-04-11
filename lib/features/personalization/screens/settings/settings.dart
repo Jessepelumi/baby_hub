@@ -3,6 +3,7 @@ import 'package:baby_hub/common/widgets/custom/container/primary_header_containe
 import 'package:baby_hub/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:baby_hub/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:baby_hub/common/widgets/texts/section_heading.dart';
+import 'package:baby_hub/features/personalization/screens/address/address.dart';
 import 'package:baby_hub/features/personalization/screens/profile/profile.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
@@ -60,7 +61,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: "Shipping Address",
                     subTitle: "Set shopping delivery address",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const AddressScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.shopping_cart,
