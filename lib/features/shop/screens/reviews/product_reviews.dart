@@ -16,7 +16,7 @@ class ProductReviews extends StatelessWidget {
       appBar: CustomAppBar(
         title: Text(
           "Reviews & Ratings",
-          style: Theme.of(context).textTheme.headlineMedium,
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         showBackArrow: true,
       ),
