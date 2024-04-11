@@ -1,6 +1,8 @@
 import 'package:baby_hub/features/authentication/screens/password_configuration/reset_password.dart';
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
+import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,13 +13,18 @@ class ForgotPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
             onPressed: () => Get.back(),
-            icon: const Icon(CupertinoIcons.clear),
+            icon: Icon(
+              CupertinoIcons.clear,
+              color: dark ? TColors.white : TColors.black,
+            ),
           ),
         ],
       ),
@@ -52,7 +59,13 @@ class ForgotPassword extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Get.off(() => const ResetPassword()),
-                child: const Text(TTextStrings.submit),
+                child: Text(
+                  TTextStrings.submit,
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge!
+                      .apply(color: TColors.white),
+                ),
               ),
             )
           ],

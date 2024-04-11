@@ -81,7 +81,13 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Get.to(() => const NavigationMenu()),
-                child: const Text(TTextStrings.signin),
+                child: Text(
+                  TTextStrings.signin,
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge!
+                      .apply(color: TColors.white),
+                ),
               ),
             ),
             const SizedBox(
@@ -93,7 +99,10 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () => Get.to(() => const Signup()),
-                child: const Text(TTextStrings.createAccount),
+                child: Text(
+                  TTextStrings.createAccount,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:baby_hub/common/widgets/appbar/appbar.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
@@ -11,7 +12,7 @@ class ResetPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: CustomAppBar(showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(TSizes.defaultSpace),
@@ -43,7 +44,13 @@ class ResetPassword extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(TTextStrings.done),
+                  child: Text(
+                    TTextStrings.done,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge!
+                        .apply(color: TColors.white),
+                  ),
                 ),
               ),
               const SizedBox(height: TSizes.spaceBtwItems),

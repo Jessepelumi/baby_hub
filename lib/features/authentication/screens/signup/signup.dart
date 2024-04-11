@@ -1,3 +1,4 @@
+import 'package:baby_hub/common/widgets/appbar/appbar.dart';
 import 'package:baby_hub/common/widgets/login_signup/form_divider.dart';
 import 'package:baby_hub/common/widgets/login_signup/social_buttons.dart';
 import 'package:baby_hub/features/authentication/screens/signup/widgets/signup_form.dart';
@@ -12,7 +13,7 @@ class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: CustomAppBar(showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(TSizes.defaultSpace),

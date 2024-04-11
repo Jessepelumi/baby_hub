@@ -153,7 +153,10 @@ class SettingsScreen extends StatelessWidget {
                       style: OutlinedButton.styleFrom(
                         side: const BorderSide(color: TColors.primary),
                       ),
-                      child: const Text("Logout"),
+                      child: Text(
+                        "Logout",
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
                     ),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections * 1.5),

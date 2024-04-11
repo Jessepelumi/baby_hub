@@ -1,4 +1,5 @@
 import 'package:baby_hub/common/styles/spacing_styles.dart';
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
@@ -50,7 +51,13 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: const Text(TTextStrings.tcontinue),
+                  child: Text(
+                    TTextStrings.tcontinue,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge!
+                        .apply(color: TColors.white),
+                  ),
                 ),
               ),
             ],

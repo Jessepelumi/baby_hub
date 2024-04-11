@@ -1,5 +1,6 @@
 import 'package:baby_hub/features/authentication/screens/signup/verify_email.dart';
 import 'package:baby_hub/features/authentication/screens/signup/widgets/t_and_c_checkbox.dart';
+import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -88,8 +89,12 @@ class SignupForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () => Get.to(() => const VerifyEmailScreen()),
-              child: const Text(
+              child: Text(
                 TTextStrings.createAccount,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge!
+                    .apply(color: TColors.white),
               ),
             ),
           ),

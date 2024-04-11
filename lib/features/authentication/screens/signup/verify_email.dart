@@ -14,13 +14,18 @@ class VerifyEmailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
             onPressed: () => Get.offAll(() => const LoginScreen()),
-            icon: const Icon(CupertinoIcons.clear),
+            icon: Icon(
+              CupertinoIcons.clear,
+              color: dark ? TColors.white : TColors.black,
+            ),
           ),
         ],
       ),
@@ -70,7 +75,13 @@ class VerifyEmailScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  child: const Text(TTextStrings.tcontinue),
+                  child: Text(
+                    TTextStrings.tcontinue,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge!
+                        .apply(color: TColors.white),
+                  ),
                 ),
               ),
               const SizedBox(height: TSizes.spaceBtwItems),
