@@ -3,6 +3,7 @@ import 'package:baby_hub/features/authentication/screens/signup/widgets/t_and_c_
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/constants/text_strings.dart';
+import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -14,6 +15,8 @@ class SignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
+
     return Form(
       child: Column(
         children: [
@@ -22,19 +25,35 @@ class SignupForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   expands: false,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: TTextStrings.firstName,
-                    prefixIcon: Icon(Iconsax.user),
+                    //prefixIcon: Icon(Iconsax.user),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                          color: dark ? TColors.grey : TColors.darkerGrey,
+                          width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: TColors.primary, width: 2),
+                    ),
                   ),
                 ),
               ),
-              const SizedBox(width: TSizes.spaceBtwInputFields),
+              const SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
               Expanded(
                 child: TextFormField(
                   expands: false,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: TTextStrings.lastName,
-                    prefixIcon: Icon(Iconsax.user),
+                    //prefixIcon: Icon(Iconsax.user),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                          color: dark ? TColors.grey : TColors.darkerGrey,
+                          width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: TColors.primary, width: 2),
+                    ),
                   ),
                 ),
               ),
@@ -44,27 +63,48 @@ class SignupForm extends StatelessWidget {
 
           // Username
           TextFormField(
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: TTextStrings.username,
-              prefixIcon: Icon(Iconsax.user_edit),
+              //prefixIcon: Icon(Iconsax.user_edit),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: TColors.primary, width: 2),
+              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Email
           TextFormField(
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: TTextStrings.email,
-              prefixIcon: Icon(Iconsax.direct),
+              //prefixIcon: Icon(Iconsax.direct),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: TColors.primary, width: 2),
+              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Phone Number
           TextFormField(
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: TTextStrings.phoneNo,
-              prefixIcon: Icon(Iconsax.call),
+              //prefixIcon: Icon(Iconsax.call),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: TColors.primary, width: 2),
+              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -72,10 +112,17 @@ class SignupForm extends StatelessWidget {
           // Password
           TextFormField(
             obscureText: true,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: TTextStrings.password,
-              prefixIcon: Icon(Iconsax.password_check),
+              //prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: Icon(Iconsax.eye_slash),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: TColors.primary, width: 2),
+              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),

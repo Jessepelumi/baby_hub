@@ -33,7 +33,10 @@ class AddNewAddress extends StatelessWidget {
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                           color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 3),
+                          width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
@@ -44,7 +47,10 @@ class AddNewAddress extends StatelessWidget {
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                           color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 3),
+                          width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
@@ -58,7 +64,11 @@ class AddNewAddress extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                                 color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 3),
+                                width: 2),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide:
+                                BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
@@ -71,7 +81,11 @@ class AddNewAddress extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                                 color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 3),
+                                width: 2),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide:
+                                BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
@@ -88,7 +102,11 @@ class AddNewAddress extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                                 color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 3),
+                                width: 2),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide:
+                                BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
@@ -101,7 +119,11 @@ class AddNewAddress extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                                 color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 3),
+                                width: 2),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide:
+                                BorderSide(color: TColors.primary, width: 2),
                           ),
                         ),
                       ),
@@ -115,7 +137,10 @@ class AddNewAddress extends StatelessWidget {
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                           color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 3),
+                          width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: TColors.primary, width: 2),
                     ),
                   ),
                 ),
@@ -126,7 +151,10 @@ class AddNewAddress extends StatelessWidget {
                     onPressed: () {},
                     child: Text(
                       "Save",
-                      style: Theme.of(context).textTheme.titleLarge,
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge!
+                          .apply(color: TColors.white),
                     ),
                   ),
                 ),

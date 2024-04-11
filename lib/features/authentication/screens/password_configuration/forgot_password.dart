@@ -47,9 +47,17 @@ class ForgotPassword extends StatelessWidget {
 
             // Textfield
             TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: TTextStrings.email,
-                prefixIcon: Icon(Iconsax.direct_right),
+                //prefixIcon: Icon(Iconsax.direct_right),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                      color: dark ? TColors.grey : TColors.darkerGrey,
+                      width: 2),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: TColors.primary, width: 2),
+                ),
               ),
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
