@@ -1,5 +1,7 @@
 import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/features/shop/screens/reviews/widgets/rating_progress_indicator.dart';
+import 'package:baby_hub/common/widgets/products/ratings/rating_star_widget.dart';
+import 'package:baby_hub/features/shop/screens/reviews/widgets/overall_product_rating.dart';
+import 'package:baby_hub/features/shop/screens/reviews/widgets/user_review_card.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -30,26 +32,14 @@ class ProductReviews extends StatelessWidget {
               SizedBox(height: TSizes.spaceBtwItems),
 
               // Overall product rating
-              Row(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Text("4.8",
-                          style: Theme.of(context).textTheme.displayLarge)),
-                  Expanded(
-                    flex: 7,
-                    child: Column(
-                      children: [
-                        RatingProgressIndicator(text: "5", value: 0.6),
-                        RatingProgressIndicator(text: "4", value: 0.7),
-                        RatingProgressIndicator(text: "3", value: 0.4),
-                        RatingProgressIndicator(text: "2", value: 0.3),
-                        RatingProgressIndicator(text: "1", value: 0.2),
-                      ],
-                    ),
-                  )
-                ],
-              )
+              OverallProductRating(),
+              RatingStarWidget(rating: 4.5),
+              Text("199", style: Theme.of(context).textTheme.bodySmall),
+              SizedBox(height: TSizes.spaceBtwSections),
+
+              // User review list
+              UserReviewCard(),
+              UserReviewCard(),
             ],
           ),
         ),
