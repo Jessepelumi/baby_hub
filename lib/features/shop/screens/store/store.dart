@@ -26,7 +26,6 @@ class StoreScreen extends StatelessWidget {
           ),
           actions: [
             CounterIcon(
-              onPressed: () {},
               iconColor: THelperFunctions.isDarkMode(context)
                   ? TColors.white
                   : TColors.dark,
