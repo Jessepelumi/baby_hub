@@ -7,11 +7,9 @@ import 'package:iconsax/iconsax.dart';
 class CounterIcon extends StatelessWidget {
   const CounterIcon({
     super.key,
-    //required this.onPressed,
     this.iconColor,
   });
 
-  //final VoidCallback onPressed;
   final Color? iconColor;
 
   @override
