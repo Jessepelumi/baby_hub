@@ -1,15 +1,17 @@
+import 'package:baby_hub/features/shop/screens/cart/cart.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CounterIcon extends StatelessWidget {
   const CounterIcon({
     super.key,
-    required this.onPressed,
+    //required this.onPressed,
     this.iconColor,
   });
 
-  final VoidCallback onPressed;
+  //final VoidCallback onPressed;
   final Color? iconColor;
 
   @override
@@ -17,7 +19,7 @@ class CounterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: onPressed,
+          onPressed: () => Get.to(() => const CartScreen()),
           icon: const Icon(Iconsax.shopping_bag),
           color: iconColor,
         ),
