@@ -10,12 +10,14 @@ class ProductPriceText extends StatelessWidget {
     this.isLarge = false,
     this.lineThrough = false,
     this.isCheckout = false,
+    this.isOrder = false,
   });
 
   final String currency, price;
   final int maxLines;
   final bool isLarge;
   final bool isCheckout;
+  final bool isOrder;
   final bool lineThrough;
 
   @override
@@ -24,13 +26,23 @@ class ProductPriceText extends StatelessWidget {
       currency + price,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
-      style: isCheckout
-          ? Theme.of(context).textTheme.titleLarge!.apply(color: TColors.white)
-          : isLarge
-              ? Theme.of(context).textTheme.headlineMedium!.apply(
-                  decoration: lineThrough ? TextDecoration.lineThrough : null)
-              : Theme.of(context).textTheme.titleLarge!.apply(
-                  decoration: lineThrough ? TextDecoration.lineThrough : null),
+      style: isOrder
+          ? Theme.of(context)
+              .textTheme
+              .titleLarge!
+              .apply(color: TColors.primary)
+          : isCheckout
+              ? Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .apply(color: TColors.white)
+              : isLarge
+                  ? Theme.of(context).textTheme.headlineMedium!.apply(
+                      decoration:
+                          lineThrough ? TextDecoration.lineThrough : null)
+                  : Theme.of(context).textTheme.titleLarge!.apply(
+                      decoration:
+                          lineThrough ? TextDecoration.lineThrough : null),
     );
   }
 }
