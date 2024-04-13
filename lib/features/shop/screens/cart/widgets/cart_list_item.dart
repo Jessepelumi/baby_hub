@@ -8,7 +8,10 @@ import 'package:flutter/material.dart';
 class CartListItem extends StatelessWidget {
   const CartListItem({
     super.key,
+    this.showQuantityButtons = true,
   });
+
+  final bool showQuantityButtons;
 
   @override
   Widget build(BuildContext context) {
@@ -20,19 +23,20 @@ class CartListItem extends StatelessWidget {
       itemBuilder: (_, index) => Column(
         children: [
           const CartItemWidget(),
-          const SizedBox(height: TSizes.spaceBtwItems),
-          Row(
-            children: [
-              const SizedBox(width: 70),
-              // Add & remove button
-              const ProductQuantityWidget(),
-              const SizedBox(width: TSizes.spaceBtwItems),
-              ProductPriceText(
-                price: "7100",
-                currency: getNaira(),
-              ),
-            ],
-          )
+          if (showQuantityButtons) SizedBox(height: TSizes.spaceBtwItems),
+          if (showQuantityButtons)
+            Row(
+              children: [
+                const SizedBox(width: 70),
+                // Add & remove button
+                const ProductQuantityWidget(),
+                const SizedBox(width: TSizes.spaceBtwItems),
+                ProductPriceText(
+                  price: "7100",
+                  currency: getNaira(),
+                ),
+              ],
+            )
         ],
       ),
     );
