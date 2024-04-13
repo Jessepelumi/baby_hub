@@ -26,7 +26,7 @@ class CartItemWidget extends StatelessWidget {
           //padding: EdgeInsets.all(value),
           backgroundColor: dark ? TColors.darkerGrey : TColors.light,
         ),
-        SizedBox(width: TSizes.spaceBtwItems),
+        const SizedBox(width: TSizes.spaceBtwItems),
 
         // Details
         Expanded(
@@ -34,8 +34,8 @@ class CartItemWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              BrandTitleText(title: "JEOLAD"),
-              Flexible(
+              const BrandTitleText(title: "JEOLAD"),
+              const Flexible(
                 child: ProductTitleText(
                   title: "Unisex baby sneakers",
                   maxLines: 1,

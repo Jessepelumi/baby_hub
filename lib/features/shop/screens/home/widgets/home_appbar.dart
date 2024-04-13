@@ -31,7 +31,7 @@ class HomeAppBar extends StatelessWidget {
           ),
         ],
       ),
-      actions: [
+      actions: const [
         CounterIcon(
           iconColor: TColors.white,
         ),
