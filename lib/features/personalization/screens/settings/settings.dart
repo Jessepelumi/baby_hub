@@ -5,6 +5,7 @@ import 'package:baby_hub/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:baby_hub/common/widgets/texts/section_heading.dart';
 import 'package:baby_hub/features/personalization/screens/address/address.dart';
 import 'package:baby_hub/features/personalization/screens/profile/profile.dart';
+import 'package:baby_hub/features/shop/screens/cart/cart.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: "Cart",
                     subTitle: "Add, remove products and move to checkout",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const CartScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.bag_tick,
