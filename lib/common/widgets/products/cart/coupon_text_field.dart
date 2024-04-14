@@ -14,7 +14,7 @@ class CouponTextField extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: TSizes.sm,
         bottom: TSizes.sm,
         right: TSizes.sm,
@@ -37,10 +37,9 @@ class CouponTextField extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(width: TSizes.spaceBtwInputFields),
+          const SizedBox(width: TSizes.spaceBtwInputFields),
           ElevatedButton(
             onPressed: () {},
-            child: Icon(Iconsax.arrow_right_1),
             style: ElevatedButton.styleFrom(
               backgroundColor: TColors.grey.withOpacity(0.5),
               foregroundColor:
@@ -49,6 +48,7 @@ class CouponTextField extends StatelessWidget {
                 color: TColors.grey.withOpacity(0.5),
               ),
             ),
+            child: const Icon(Iconsax.arrow_right_1),
           ),
         ],
       ),

@@ -23,8 +23,8 @@ class CartScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
+      body: const Padding(
+        padding: EdgeInsets.all(TSizes.defaultSpace),
         child: CartListItem(),
       ),
       bottomNavigationBar: Padding(

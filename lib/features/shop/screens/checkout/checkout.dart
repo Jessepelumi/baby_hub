@@ -11,11 +11,8 @@ import 'package:baby_hub/navigation_menu.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 //import 'package:baby_hub/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class CheckoutScreen extends StatelessWidget {
   const CheckoutScreen({super.key});
@@ -32,7 +29,7 @@ class CheckoutScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
@@ -47,7 +44,7 @@ class CheckoutScreen extends StatelessWidget {
 
               // Billing section
               Padding(
-                padding: const EdgeInsets.all(TSizes.md),
+                padding: EdgeInsets.all(TSizes.md),
                 child: Column(
                   children: [
                     // Divider

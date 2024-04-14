@@ -23,7 +23,7 @@ class CartListItem extends StatelessWidget {
       itemBuilder: (_, index) => Column(
         children: [
           const CartItemWidget(),
-          if (showQuantityButtons) SizedBox(height: TSizes.spaceBtwItems),
+          if (showQuantityButtons) const SizedBox(height: TSizes.spaceBtwItems),
           if (showQuantityButtons)
             Row(
               children: [
