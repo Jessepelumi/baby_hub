@@ -6,6 +6,7 @@ import 'package:baby_hub/common/widgets/texts/section_heading.dart';
 import 'package:baby_hub/features/personalization/screens/address/address.dart';
 import 'package:baby_hub/features/personalization/screens/profile/profile.dart';
 import 'package:baby_hub/features/shop/screens/cart/cart.dart';
+import 'package:baby_hub/features/shop/screens/order/order.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -74,7 +75,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: "Orders",
                     subTitle: "Manage in-progress and completed orders",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.bank,
