@@ -1,4 +1,4 @@
-import 'package:baby_hub/common/widgets/images/circular_image.dart';
+import 'package:baby_hub/common/widgets/images/rounded_banner_image.dart';
 import 'package:baby_hub/common/widgets/texts/brand_title_text.dart';
 import 'package:baby_hub/features/shop/screens/product/widgets/product_title_text.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
@@ -19,11 +19,10 @@ class CartItemWidget extends StatelessWidget {
     return Row(
       children: [
         // Image
-        CircularImage(
-          image: TImageStrings.product_test,
-          width: 60,
+        RoundedBannerImage(
+          imageUrl: TImageStrings.product_test,
+          widht: 60,
           height: 60,
-          //padding: EdgeInsets.all(value),
           backgroundColor: dark ? TColors.darkerGrey : TColors.light,
         ),
         const SizedBox(width: TSizes.spaceBtwItems),
