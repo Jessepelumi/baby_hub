@@ -1,6 +1,8 @@
 import 'package:baby_hub/common/widgets/image_text/vertical_image_text.dart';
+import 'package:baby_hub/features/shop/screens/sub_categories/sub_categories.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeCategories extends StatelessWidget {
   const HomeCategories({
@@ -19,7 +21,7 @@ class HomeCategories extends StatelessWidget {
           return VerticalImageText(
             image: TImageStrings.test,
             title: "Test",
-            onTap: () {},
+            onTap: () => Get.to(() => const SubCategories()),
           );
         },
       ),
