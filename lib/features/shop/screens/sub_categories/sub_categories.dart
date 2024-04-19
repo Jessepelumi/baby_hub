@@ -15,7 +15,10 @@ class SubCategories extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         showBackArrow: true,
-        title: Text("Sport"),
+        title: Text(
+          "Sport",
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
