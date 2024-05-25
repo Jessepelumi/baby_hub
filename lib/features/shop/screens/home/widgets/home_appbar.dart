@@ -1,7 +1,7 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/products/cart/cart_menu_icon.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/text_strings.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/products/cart/cart_menu_icon.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -39,4 +39,3 @@ class HomeAppBar extends StatelessWidget {
     );
   }
 }
-

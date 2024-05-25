@@ -1,10 +1,10 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
-import 'package:baby_hub/features/shop/screens/cart/widgets/cart_list_item.dart';
-import 'package:baby_hub/features/shop/screens/checkout/checkout.dart';
-import 'package:baby_hub/localization/naira_symbol.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-//import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:paalii/features/shop/screens/cart/widgets/cart_list_item.dart';
+import 'package:paalii/features/shop/screens/checkout/checkout.dart';
+import 'package:paalii/localization/naira_symbol.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+//import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

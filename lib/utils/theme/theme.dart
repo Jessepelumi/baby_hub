@@ -1,11 +1,11 @@
-import 'package:baby_hub/utils/theme/custom/appbar_theme.dart';
-import 'package:baby_hub/utils/theme/custom/bottom_sheet_theme.dart';
-import 'package:baby_hub/utils/theme/custom/checkbox_theme.dart';
-import 'package:baby_hub/utils/theme/custom/chip_theme.dart';
-import 'package:baby_hub/utils/theme/custom/elevated_button_theme.dart';
-import 'package:baby_hub/utils/theme/custom/outlined_button_theme.dart';
-import 'package:baby_hub/utils/theme/custom/text_field_theme.dart';
-import 'package:baby_hub/utils/theme/custom/text_theme.dart';
+import 'package:paalii/utils/theme/custom/appbar_theme.dart';
+import 'package:paalii/utils/theme/custom/bottom_sheet_theme.dart';
+import 'package:paalii/utils/theme/custom/checkbox_theme.dart';
+import 'package:paalii/utils/theme/custom/chip_theme.dart';
+import 'package:paalii/utils/theme/custom/elevated_button_theme.dart';
+import 'package:paalii/utils/theme/custom/outlined_button_theme.dart';
+import 'package:paalii/utils/theme/custom/text_field_theme.dart';
+import 'package:paalii/utils/theme/custom/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

@@ -1,4 +1,4 @@
-import 'package:baby_hub/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:iconsax/iconsax.dart';

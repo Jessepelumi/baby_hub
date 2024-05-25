@@ -1,5 +1,5 @@
-import 'package:baby_hub/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:baby_hub/utils/theme/theme.dart';
+import 'package:paalii/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:paalii/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

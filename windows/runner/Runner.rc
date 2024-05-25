@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "baby_hub" "\0"
+            VALUE "FileDescription", "paalii" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "baby_hub" "\0"
+            VALUE "InternalName", "paalii" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "baby_hub.exe" "\0"
-            VALUE "ProductName", "baby_hub" "\0"
+            VALUE "OriginalFilename", "paalii.exe" "\0"
+            VALUE "ProductName", "paalii" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

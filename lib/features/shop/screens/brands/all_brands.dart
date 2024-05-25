@@ -1,9 +1,9 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/brands/brand_card.dart';
-import 'package:baby_hub/common/widgets/layout/grid_layout.dart';
-import 'package:baby_hub/common/widgets/texts/section_heading.dart';
-import 'package:baby_hub/features/shop/screens/brands/brand_products.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/brands/brand_card.dart';
+import 'package:paalii/common/widgets/layout/grid_layout.dart';
+import 'package:paalii/common/widgets/texts/section_heading.dart';
+import 'package:paalii/features/shop/screens/brands/brand_products.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

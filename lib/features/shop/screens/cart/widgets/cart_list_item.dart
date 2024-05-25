@@ -1,8 +1,8 @@
-import 'package:baby_hub/common/widgets/products/cart/add_remove_button.dart';
-import 'package:baby_hub/common/widgets/products/cart/cart_item.dart';
-import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
-import 'package:baby_hub/localization/naira_symbol.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/products/cart/add_remove_button.dart';
+import 'package:paalii/common/widgets/products/cart/cart_item.dart';
+import 'package:paalii/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:paalii/localization/naira_symbol.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CartListItem extends StatelessWidget {

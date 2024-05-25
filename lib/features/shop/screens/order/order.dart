@@ -1,6 +1,6 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/features/shop/screens/order/widgets/order_list.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/features/shop/screens/order/widgets/order_list.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class OrderScreen extends StatelessWidget {

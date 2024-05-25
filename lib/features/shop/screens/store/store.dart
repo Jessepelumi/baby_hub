@@ -1,15 +1,15 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/appbar/tabbar.dart';
-import 'package:baby_hub/common/widgets/custom/container/search_container.dart';
-import 'package:baby_hub/common/widgets/layout/grid_layout.dart';
-import 'package:baby_hub/common/widgets/products/cart/cart_menu_icon.dart';
-import 'package:baby_hub/common/widgets/texts/section_heading.dart';
-import 'package:baby_hub/common/widgets/brands/brand_card.dart';
-import 'package:baby_hub/features/shop/screens/brands/all_brands.dart';
-import 'package:baby_hub/features/shop/screens/store/widget/category_tab.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/appbar/tabbar.dart';
+import 'package:paalii/common/widgets/custom/container/search_container.dart';
+import 'package:paalii/common/widgets/layout/grid_layout.dart';
+import 'package:paalii/common/widgets/products/cart/cart_menu_icon.dart';
+import 'package:paalii/common/widgets/texts/section_heading.dart';
+import 'package:paalii/common/widgets/brands/brand_card.dart';
+import 'package:paalii/features/shop/screens/brands/all_brands.dart';
+import 'package:paalii/features/shop/screens/store/widget/category_tab.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

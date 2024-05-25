@@ -1,4 +1,4 @@
-package com.example.baby_hub
+package com.example.paalii
 
 import io.flutter.embedding.android.FlutterActivity
 

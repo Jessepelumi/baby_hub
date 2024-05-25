@@ -1,4 +1,4 @@
-import 'package:baby_hub/app.dart';
+import 'package:paalii/app.dart';
 import 'package:flutter/material.dart';
 
 // Entry point for the application

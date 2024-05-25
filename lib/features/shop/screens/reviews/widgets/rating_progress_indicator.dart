@@ -1,5 +1,5 @@
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/device/device_utility.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class RatingProgressIndicator extends StatelessWidget {

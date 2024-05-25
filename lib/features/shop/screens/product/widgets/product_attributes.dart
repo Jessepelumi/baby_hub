@@ -1,12 +1,12 @@
-import 'package:baby_hub/common/widgets/chip/choice_chip.dart';
-import 'package:baby_hub/common/widgets/custom/container/rounded_container.dart';
-import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
-import 'package:baby_hub/common/widgets/texts/product_title_text.dart';
-import 'package:baby_hub/common/widgets/texts/section_heading.dart';
-import 'package:baby_hub/localization/naira_symbol.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/common/widgets/chip/choice_chip.dart';
+import 'package:paalii/common/widgets/custom/container/rounded_container.dart';
+import 'package:paalii/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:paalii/common/widgets/texts/product_title_text.dart';
+import 'package:paalii/common/widgets/texts/section_heading.dart';
+import 'package:paalii/localization/naira_symbol.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class ProductAttributes extends StatelessWidget {

@@ -1,10 +1,10 @@
-import 'package:baby_hub/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_circular_button.dart';
-import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:baby_hub/features/authentication/screens/onboarding/widgets/onboarding_widget.dart';
-import 'package:baby_hub/utils/constants/image_strings.dart';
-import 'package:baby_hub/utils/constants/text_strings.dart';
+import 'package:paalii/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:paalii/features/authentication/screens/onboarding/widgets/onboarding_circular_button.dart';
+import 'package:paalii/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:paalii/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:paalii/features/authentication/screens/onboarding/widgets/onboarding_widget.dart';
+import 'package:paalii/utils/constants/image_strings.dart';
+import 'package:paalii/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

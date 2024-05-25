@@ -1,4 +1,4 @@
-import 'package:baby_hub/features/shop/screens/reviews/widgets/rating_progress_indicator.dart';
+import 'package:paalii/features/shop/screens/reviews/widgets/rating_progress_indicator.dart';
 import 'package:flutter/material.dart';
 
 class OverallProductRating extends StatelessWidget {
@@ -12,8 +12,8 @@ class OverallProductRating extends StatelessWidget {
       children: [
         Expanded(
             flex: 3,
-            child: Text("4.8",
-                style: Theme.of(context).textTheme.displayLarge)),
+            child:
+                Text("4.8", style: Theme.of(context).textTheme.displayLarge)),
         const Expanded(
           flex: 7,
           child: Column(

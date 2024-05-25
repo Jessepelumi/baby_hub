@@ -1,11 +1,11 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/login_signup/form_divider.dart';
-import 'package:baby_hub/common/widgets/login_signup/social_buttons.dart';
-import 'package:baby_hub/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/constants/text_strings.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/login_signup/form_divider.dart';
+import 'package:paalii/common/widgets/login_signup/social_buttons.dart';
+import 'package:paalii/features/authentication/screens/signup/widgets/signup_form.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/constants/text_strings.dart';
+import 'package:flutter/material.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});

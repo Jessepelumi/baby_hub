@@ -1,5 +1,5 @@
-import 'package:baby_hub/common/widgets/texts/section_heading.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/texts/section_heading.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BillingAddressSection extends StatelessWidget {

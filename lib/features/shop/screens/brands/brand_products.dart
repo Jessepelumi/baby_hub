@@ -1,7 +1,7 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/brands/brand_card.dart';
-import 'package:baby_hub/common/widgets/products/sortable/sorted_products.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/brands/brand_card.dart';
+import 'package:paalii/common/widgets/products/sortable/sorted_products.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BrandProducts extends StatelessWidget {

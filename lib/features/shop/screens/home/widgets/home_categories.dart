@@ -1,6 +1,6 @@
-import 'package:baby_hub/common/widgets/image_text/vertical_image_text.dart';
-import 'package:baby_hub/features/shop/screens/sub_categories/sub_categories.dart';
-import 'package:baby_hub/utils/constants/image_strings.dart';
+import 'package:paalii/common/widgets/image_text/vertical_image_text.dart';
+import 'package:paalii/features/shop/screens/sub_categories/sub_categories.dart';
+import 'package:paalii/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

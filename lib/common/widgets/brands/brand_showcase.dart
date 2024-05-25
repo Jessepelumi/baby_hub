@@ -1,8 +1,8 @@
-import 'package:baby_hub/common/widgets/brands/brand_card.dart';
-import 'package:baby_hub/common/widgets/custom/container/rounded_container.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/common/widgets/brands/brand_card.dart';
+import 'package:paalii/common/widgets/custom/container/rounded_container.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class BrandShowcase extends StatelessWidget {

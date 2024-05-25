@@ -1,6 +1,6 @@
-import 'package:baby_hub/common/widgets/custom/container/circular_container.dart';
-import 'package:baby_hub/common/widgets/custom/curved_edges/curved_edges_widget.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
+import 'package:paalii/common/widgets/custom/container/circular_container.dart';
+import 'package:paalii/common/widgets/custom/curved_edges/curved_edges_widget.dart';
+import 'package:paalii/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {

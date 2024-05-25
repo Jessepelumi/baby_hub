@@ -1,9 +1,9 @@
-import 'package:baby_hub/features/personalization/screens/settings/settings.dart';
-import 'package:baby_hub/features/shop/screens/home/home.dart';
-import 'package:baby_hub/features/shop/screens/store/store.dart';
-import 'package:baby_hub/features/shop/screens/wishlist/wishlist.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/features/personalization/screens/settings/settings.dart';
+import 'package:paalii/features/shop/screens/home/home.dart';
+import 'package:paalii/features/shop/screens/store/store.dart';
+import 'package:paalii/features/shop/screens/wishlist/wishlist.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

@@ -1,4 +1,4 @@
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class GridLayoutWIdget extends StatelessWidget {

@@ -1,8 +1,8 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/common/widgets/products/ratings/rating_star_widget.dart';
-import 'package:baby_hub/features/shop/screens/reviews/widgets/overall_product_rating.dart';
-import 'package:baby_hub/features/shop/screens/reviews/widgets/user_review_card.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/common/widgets/products/ratings/rating_star_widget.dart';
+import 'package:paalii/features/shop/screens/reviews/widgets/overall_product_rating.dart';
+import 'package:paalii/features/shop/screens/reviews/widgets/user_review_card.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ProductReviews extends StatelessWidget {

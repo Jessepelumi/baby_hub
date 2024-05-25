@@ -1,8 +1,8 @@
-import 'package:baby_hub/common/widgets/appbar/appbar.dart';
-import 'package:baby_hub/features/personalization/screens/address/add_new_address.dart';
-import 'package:baby_hub/features/personalization/screens/address/widgets/single_address.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/appbar/appbar.dart';
+import 'package:paalii/features/personalization/screens/address/add_new_address.dart';
+import 'package:paalii/features/personalization/screens/address/widgets/single_address.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

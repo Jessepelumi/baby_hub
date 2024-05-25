@@ -1,6 +1,6 @@
-import 'package:baby_hub/utils/constants/image_strings.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/constants/text_strings.dart';
+import 'package:paalii/utils/constants/image_strings.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class LoginHeader extends StatelessWidget {
@@ -32,4 +32,3 @@ class LoginHeader extends StatelessWidget {
     );
   }
 }
-

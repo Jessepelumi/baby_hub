@@ -1,4 +1,4 @@
-import 'package:baby_hub/common/widgets/custom/curved_edges/curved_edges.dart';
+import 'package:paalii/common/widgets/custom/curved_edges/curved_edges.dart';
 import 'package:flutter/material.dart';
 
 class CurvedEdgesWidget extends StatelessWidget {

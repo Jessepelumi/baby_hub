@@ -1,7 +1,7 @@
-import 'package:baby_hub/common/widgets/products/product_cards/product_price_text.dart';
-import 'package:baby_hub/localization/naira_symbol.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
+import 'package:paalii/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:paalii/localization/naira_symbol.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BillingAmountSection extends StatelessWidget {

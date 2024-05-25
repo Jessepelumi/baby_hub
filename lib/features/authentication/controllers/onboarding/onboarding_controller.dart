@@ -1,4 +1,4 @@
-import 'package:baby_hub/features/authentication/screens/login/login.dart';
+import 'package:paalii/features/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

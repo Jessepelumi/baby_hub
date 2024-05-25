@@ -1,10 +1,10 @@
-import 'package:baby_hub/common/widgets/images/rounded_banner_image.dart';
-import 'package:baby_hub/common/widgets/texts/brand_title_text.dart';
-import 'package:baby_hub/features/shop/screens/product/widgets/product_title_text.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/image_strings.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/common/widgets/images/rounded_banner_image.dart';
+import 'package:paalii/common/widgets/texts/brand_title_text.dart';
+import 'package:paalii/features/shop/screens/product/widgets/product_title_text.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/image_strings.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class CartItemWidget extends StatelessWidget {

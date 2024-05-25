@@ -1,8 +1,8 @@
-import 'package:baby_hub/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:baby_hub/utils/constants/colors.dart';
-import 'package:baby_hub/utils/constants/sizes.dart';
-import 'package:baby_hub/utils/device/device_utility.dart';
-import 'package:baby_hub/utils/helpers/helper_functions.dart';
+import 'package:paalii/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:paalii/utils/constants/colors.dart';
+import 'package:paalii/utils/constants/sizes.dart';
+import 'package:paalii/utils/device/device_utility.dart';
+import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingSkip extends StatelessWidget {
