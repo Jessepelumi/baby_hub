@@ -47,7 +47,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/logo/paalii.png"
+  image_path: "assets/logo/paalii_icon.png"
   adaptive_icon_foreground: "assets/logo/paalii_icon.png"
   adaptive_icon_background: "#FFFFFF"
 
