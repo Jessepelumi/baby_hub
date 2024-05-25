@@ -1,4 +1,4 @@
-name: baby_hub
+name: paalii
 description: "A new Flutter project."
 
 publish_to: "none"
@@ -36,12 +36,12 @@ dependencies:
   flutter_rating_bar: ^4.0.1
 
 # Development dependencies
+  paalii: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^3.0.0
-
 flutter:
   uses-material-design: true
 
