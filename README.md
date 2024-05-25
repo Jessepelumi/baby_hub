@@ -1,6 +1,6 @@
-# paalii
+# Paalii
 
-A new Flutter project.
+Paalii E-Commerce Application
 
 ## Getting Started
 
