@@ -16,8 +16,8 @@ class AllProducts extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
+      body: const SingleChildScrollView(
+        padding: EdgeInsets.all(TSizes.defaultSpace),
         child: SortableProducts(),
       ),
     );

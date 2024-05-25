@@ -22,15 +22,15 @@ class AllBrandsScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // Heading
-              SectionHeading(
+              const SectionHeading(
                 title: "All Brands",
                 showActionButton: false,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               // Brands
               GridLayoutWIdget(
