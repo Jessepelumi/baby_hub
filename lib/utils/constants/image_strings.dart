@@ -1,6 +1,6 @@
 class TImageStrings {
   // App logo
-  static const String appLogo = "assets/logo/BabyHubLogo.png";
+  static const String appLogo = "assets/logo/paalii-logo.png";
 
   // Social logo
   static const String googleLogo = "assets/logo/google.png";
@@ -17,8 +17,7 @@ class TImageStrings {
   // ignore: constant_identifier_names
   static const String product_test =
       "assets/images/on_boarding_images/test_product.jpeg";
-  static const String profile =
-      "assets/images/on_boarding_images/profile.png";
+  static const String profile = "assets/images/on_boarding_images/profile.png";
 
   // Animations
   static const String paid = "assets/images/animations/paid.gif";
