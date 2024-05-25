@@ -15,18 +15,18 @@ class AllProducts extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         showBackArrow: true,
         title: Text("Popular Products"),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
           children: [
             // Dropdown
             DropdownButtonFormField(
               decoration: InputDecoration(
-                prefixIcon: Icon(Iconsax.sort),
+                prefixIcon: const Icon(Iconsax.sort),
                 enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(
                       color: dark ? TColors.grey : TColors.darkerGrey,
@@ -56,7 +56,7 @@ class AllProducts extends StatelessWidget {
             // Products
             GridLayoutWIdget(
               itemCount: 6,
-              itemBuilder: (_, index) => ProductCardVertical(),
+              itemBuilder: (_, index) => const ProductCardVertical(),
             ),
           ],
         ),

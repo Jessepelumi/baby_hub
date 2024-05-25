@@ -17,7 +17,7 @@ class OrderList extends StatelessWidget {
       itemCount: 4,
       separatorBuilder: (_, __) => const SizedBox(height: TSizes.spaceBtwItems),
       itemBuilder: (_, index) => RoundedContainer(
-        padding: EdgeInsets.all(TSizes.md),
+        padding: const EdgeInsets.all(TSizes.md),
         //showBorder: true,
         backgroundColor: dark ? TColors.dark : TColors.light,
         child: Column(
@@ -43,7 +43,7 @@ class OrderList extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Iconsax.arrow_right_34),
+                  icon: const Icon(Iconsax.arrow_right_34),
                 ),
               ],
             ),

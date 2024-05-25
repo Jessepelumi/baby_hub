@@ -5,7 +5,6 @@ import 'package:baby_hub/common/widgets/texts/section_heading.dart';
 import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SubCategories extends StatelessWidget {
   const SubCategories({super.key});
@@ -22,17 +21,17 @@ class SubCategories extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // Banner
-              RoundedBannerImage(
+              const RoundedBannerImage(
                 imageUrl: TImageStrings.test,
                 widht: double.infinity,
                 height: null,
                 applyImageRadius: true,
               ),
-              SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // Sub-categories
               Column(
@@ -41,7 +40,7 @@ class SubCategories extends StatelessWidget {
                     title: "Sport Shirts",
                     onPressed: () {},
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems / 2),
+                  const SizedBox(height: TSizes.spaceBtwItems / 2),
                   SizedBox(
                     height: 120,
                     child: ListView.separated(

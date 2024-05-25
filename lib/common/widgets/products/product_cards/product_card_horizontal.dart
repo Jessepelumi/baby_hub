@@ -11,7 +11,6 @@ import 'package:baby_hub/utils/constants/image_strings.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProductCardHorizontal extends StatelessWidget {
@@ -33,12 +32,12 @@ class ProductCardHorizontal extends StatelessWidget {
           // Thumbnail
           RoundedContainer(
             height: 120,
-            padding: EdgeInsets.all(TSizes.sm),
+            padding: const EdgeInsets.all(TSizes.sm),
             backgroundColor: dark ? TColors.dark : TColors.light,
             child: Stack(
               children: [
                 // Thumbnail
-                RoundedBannerImage(
+                const RoundedBannerImage(
                   imageUrl: TImageStrings.product_test,
                   applyImageRadius: true,
                 ),
@@ -88,7 +87,7 @@ class ProductCardHorizontal extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       ProductTitleText(
@@ -99,7 +98,7 @@ class ProductCardHorizontal extends StatelessWidget {
                       BrandTitleTextVerified(title: "JEOLAD"),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
