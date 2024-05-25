@@ -5,11 +5,13 @@ import 'package:baby_hub/common/widgets/layout/grid_layout.dart';
 import 'package:baby_hub/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:baby_hub/common/widgets/texts/section_heading.dart';
 import 'package:baby_hub/common/widgets/brands/brand_card.dart';
+import 'package:baby_hub/features/shop/screens/brands/all_brands.dart';
 import 'package:baby_hub/features/shop/screens/store/widget/category_tab.dart';
 import 'package:baby_hub/utils/constants/colors.dart';
 import 'package:baby_hub/utils/constants/sizes.dart';
 import 'package:baby_hub/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -63,7 +65,7 @@ class StoreScreen extends StatelessWidget {
                       // Featured brands
                       SectionHeading(
                         title: "Featured Brands",
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
