@@ -29,8 +29,8 @@ class NavigationMenu extends StatelessWidget {
           destinations: [
             NavigationBarTheme(
               data: NavigationBarThemeData(
-                labelTextStyle: MaterialStateProperty.resolveWith(
-                    (states) => states.contains(MaterialState.selected)
+                labelTextStyle: WidgetStateProperty.resolveWith(
+                    (states) => states.contains(WidgetState.selected)
                         ? const TextStyle(color: TColors.primary)
                         : darkMode
                             ? const TextStyle(color: TColors.white)
@@ -47,8 +47,8 @@ class NavigationMenu extends StatelessWidget {
             ),
             NavigationBarTheme(
               data: NavigationBarThemeData(
-                labelTextStyle: MaterialStateProperty.resolveWith(
-                    (states) => states.contains(MaterialState.selected)
+                labelTextStyle: WidgetStateProperty.resolveWith(
+                    (states) => states.contains(WidgetState.selected)
                         ? const TextStyle(color: TColors.primary)
                         : darkMode
                             ? const TextStyle(color: TColors.white)
@@ -65,8 +65,8 @@ class NavigationMenu extends StatelessWidget {
             ),
             NavigationBarTheme(
               data: NavigationBarThemeData(
-                labelTextStyle: MaterialStateProperty.resolveWith(
-                    (states) => states.contains(MaterialState.selected)
+                labelTextStyle: WidgetStateProperty.resolveWith(
+                    (states) => states.contains(WidgetState.selected)
                         ? const TextStyle(color: TColors.primary)
                         : darkMode
                             ? const TextStyle(color: TColors.white)
@@ -83,8 +83,8 @@ class NavigationMenu extends StatelessWidget {
             ),
             NavigationBarTheme(
               data: NavigationBarThemeData(
-                labelTextStyle: MaterialStateProperty.resolveWith(
-                    (states) => states.contains(MaterialState.selected)
+                labelTextStyle: WidgetStateProperty.resolveWith(
+                    (states) => states.contains(WidgetState.selected)
                         ? const TextStyle(color: TColors.primary)
                         : darkMode
                             ? const TextStyle(color: TColors.white)
