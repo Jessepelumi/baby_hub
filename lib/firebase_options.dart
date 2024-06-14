@@ -66,10 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDcZ_mTLCbP4-x6Z2eR_NhVXdxj-EVSc44',
-    appId: '1:1037508465814:ios:0de866d6a1e1ae9ef59eb7',
+    appId: '1:1037508465814:ios:d37e88cee6451124f59eb7',
     messagingSenderId: '1037508465814',
     projectId: 'paalii',
     storageBucket: 'paalii.appspot.com',
-    iosBundleId: 'com.example.babyHub',
+    iosBundleId: 'com.example.paalii',
   );
+
 }

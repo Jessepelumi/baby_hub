@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.babyHub</string>
+	<string>com.example.paalii</string>
 	<key>PROJECT_ID</key>
 	<string>paalii</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1037508465814:ios:0de866d6a1e1ae9ef59eb7</string>
+	<string>1:1037508465814:ios:d37e88cee6451124f59eb7</string>
 </dict>
 </plist>
