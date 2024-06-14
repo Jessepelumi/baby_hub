@@ -12,7 +12,20 @@
           "package_name": "com.example.paalii"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1037508465814-2pm9ior7tuggg9paim29k6onnof25vqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paalii",
+            "certificate_hash": "354a5a4bd6938125a19a6c15001a98da873817b2"
+          }
+        },
+        {
+          "client_id": "1037508465814-pf5ig0mdqii5237gl0j5mmbl6vrjpjh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD1JeE7J1iPF3uoO6uHmx5HdCAGapsg_As"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037508465814-pf5ig0mdqii5237gl0j5mmbl6vrjpjh0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1037508465814-6ld6172do78iqbqoe7q9ddpl3jjrnar0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.babyHub"
+              }
+            }
+          ]
         }
       }
     }

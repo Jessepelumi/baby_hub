@@ -70,6 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1037508465814',
     projectId: 'paalii',
     storageBucket: 'paalii.appspot.com',
+    androidClientId: '1037508465814-2pm9ior7tuggg9paim29k6onnof25vqr.apps.googleusercontent.com',
+    iosClientId: '1037508465814-mju2j85hiurtop05o989rir5s4svn6a2.apps.googleusercontent.com',
     iosBundleId: 'com.example.paalii',
   );
 
