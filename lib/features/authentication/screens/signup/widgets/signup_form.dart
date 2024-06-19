@@ -62,20 +62,20 @@ class SignupForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Username
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: TTextStrings.username,
-              //prefixIcon: Icon(Iconsax.user_edit),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(
-                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: TColors.primary, width: 2),
-              ),
-            ),
-          ),
-          const SizedBox(height: TSizes.spaceBtwInputFields),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     labelText: TTextStrings.username,
+          //     //prefixIcon: Icon(Iconsax.user_edit),
+          //     enabledBorder: UnderlineInputBorder(
+          //       borderSide: BorderSide(
+          //           color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+          //     ),
+          //     focusedBorder: const UnderlineInputBorder(
+          //       borderSide: BorderSide(color: TColors.primary, width: 2),
+          //     ),
+          //   ),
+          // ),
+          // const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Email
           TextFormField(
@@ -114,6 +114,24 @@ class SignupForm extends StatelessWidget {
             obscureText: true,
             decoration: InputDecoration(
               labelText: TTextStrings.password,
+              //prefixIcon: Icon(Iconsax.password_check),
+              suffixIcon: const Icon(Iconsax.eye_slash),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
+              ),
+              focusedBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: TColors.primary, width: 2),
+              ),
+            ),
+          ),
+          const SizedBox(height: TSizes.spaceBtwInputFields),
+
+          // Confirm Password
+          TextFormField(
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: TTextStrings.confirmPassword,
               //prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: const Icon(Iconsax.eye_slash),
               enabledBorder: UnderlineInputBorder(
