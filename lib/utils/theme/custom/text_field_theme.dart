@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paalii/utils/constants/colors.dart';
 
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
@@ -29,33 +30,17 @@ class TTextFormFieldTheme {
         color: Colors.grey,
       ),
     ),
-    enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.grey,
-      ),
+    enabledBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.darkerGrey, width: 2),
     ),
-    focusedBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.black12,
-      ),
+    focusedBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.primary, width: 2),
     ),
-    errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.red,
-      ),
+    errorBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.error, width: 2),
     ),
-    focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 2,
-        color: Colors.orange,
-      ),
+    focusedErrorBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.primary, width: 2),
     ),
   );
 
@@ -85,33 +70,17 @@ class TTextFormFieldTheme {
         color: Colors.grey,
       ),
     ),
-    enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.grey,
-      ),
+    enabledBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.grey, width: 2),
     ),
-    focusedBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.white,
-      ),
+    focusedBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.primary, width: 2),
     ),
-    errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 1,
-        color: Colors.red,
-      ),
+    errorBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.error, width: 2),
     ),
-    focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(
-        width: 2,
-        color: Colors.orange,
-      ),
+    focusedErrorBorder: const UnderlineInputBorder(
+      borderSide: BorderSide(color: TColors.primary, width: 2),
     ),
   );
 }
