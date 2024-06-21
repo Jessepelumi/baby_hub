@@ -4,7 +4,6 @@ import 'package:paalii/navigation_menu.dart';
 import 'package:paalii/utils/constants/colors.dart';
 import 'package:paalii/utils/constants/sizes.dart';
 import 'package:paalii/utils/constants/text_strings.dart';
-import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -16,7 +15,6 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
 
     return Form(
       child: Padding(
@@ -30,14 +28,6 @@ class LoginForm extends StatelessWidget {
               decoration: InputDecoration(
                 //prefixIcon: Icon(Iconsax.send_2),
                 labelText: TTextStrings.email,
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                      color: dark ? TColors.grey : TColors.darkerGrey,
-                      width: 2),
-                ),
-                focusedBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(color: TColors.primary, width: 2),
-                ),
               ),
             ),
             const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -48,14 +38,6 @@ class LoginForm extends StatelessWidget {
                 //prefixIcon: Icon(Iconsax.password_check),
                 labelText: TTextStrings.password,
                 suffixIcon: const Icon(Iconsax.eye_slash),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                      color: dark ? TColors.grey : TColors.darkerGrey,
-                      width: 2),
-                ),
-                focusedBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(color: TColors.primary, width: 2),
-                ),
               ),
             ),
             const SizedBox(height: TSizes.spaceBtwInputFields / 2),

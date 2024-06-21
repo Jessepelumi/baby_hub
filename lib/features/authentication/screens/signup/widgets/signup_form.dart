@@ -1,12 +1,12 @@
-import 'package:paalii/features/authentication/screens/signup/verify_email.dart';
+import 'package:paalii/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:paalii/features/authentication/screens/signup/widgets/t_and_c_checkbox.dart';
 import 'package:paalii/utils/constants/colors.dart';
 import 'package:paalii/utils/constants/sizes.dart';
 import 'package:paalii/utils/constants/text_strings.dart';
-import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:paalii/utils/validators/validation.dart';
 
 class SignupForm extends StatelessWidget {
   const SignupForm({
@@ -15,45 +15,32 @@ class SignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final controller = Get.put(SignupController());
 
     return Form(
+      key: controller.signupFormKey,
       child: Column(
         children: [
           Row(
             children: [
               Expanded(
                 child: TextFormField(
+                  controller: controller.firstName,
+                  validator: (value) => TValidator.validateEmptyText(value),
                   expands: false,
                   decoration: InputDecoration(
                     labelText: TTextStrings.firstName,
-                    //prefixIcon: Icon(Iconsax.user),
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                          color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 2),
-                    ),
-                    focusedBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: TColors.primary, width: 2),
-                    ),
                   ),
                 ),
               ),
               const SizedBox(width: TSizes.spaceBtwInputFields * 1.5),
               Expanded(
                 child: TextFormField(
+                  controller: controller.lastName,
+                  validator: (value) => TValidator.validateEmptyText(value),
                   expands: false,
                   decoration: InputDecoration(
                     labelText: TTextStrings.lastName,
-                    //prefixIcon: Icon(Iconsax.user),
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                          color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 2),
-                    ),
-                    focusedBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: TColors.primary, width: 2),
-                    ),
                   ),
                 ),
               ),
@@ -61,86 +48,46 @@ class SignupForm extends StatelessWidget {
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
-          // Username
-          // TextFormField(
-          //   decoration: InputDecoration(
-          //     labelText: TTextStrings.username,
-          //     //prefixIcon: Icon(Iconsax.user_edit),
-          //     enabledBorder: UnderlineInputBorder(
-          //       borderSide: BorderSide(
-          //           color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-          //     ),
-          //     focusedBorder: const UnderlineInputBorder(
-          //       borderSide: BorderSide(color: TColors.primary, width: 2),
-          //     ),
-          //   ),
-          // ),
-          // const SizedBox(height: TSizes.spaceBtwInputFields),
-
           // Email
           TextFormField(
+            controller: controller.email,
+            validator: (value) => TValidator.validateEmail(value),
             decoration: InputDecoration(
               labelText: TTextStrings.email,
-              //prefixIcon: Icon(Iconsax.direct),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(
-                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: TColors.primary, width: 2),
-              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Phone Number
           TextFormField(
+            controller: controller.phoneNumber,
+            validator: (value) => TValidator.validatePhoneNumber(value),
             decoration: InputDecoration(
               labelText: TTextStrings.phoneNo,
-              //prefixIcon: Icon(Iconsax.call),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(
-                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: TColors.primary, width: 2),
-              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Password
           TextFormField(
+            controller: controller.password,
+            validator: (value) => TValidator.validatePassword(value),
             obscureText: true,
             decoration: InputDecoration(
               labelText: TTextStrings.password,
-              //prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: const Icon(Iconsax.eye_slash),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(
-                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: TColors.primary, width: 2),
-              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           // Confirm Password
           TextFormField(
+            controller: controller.confirmPasswword,
+            validator: (value) => TValidator.validateConfirmPassword(value),
             obscureText: true,
             decoration: InputDecoration(
               labelText: TTextStrings.confirmPassword,
-              //prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: const Icon(Iconsax.eye_slash),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(
-                    color: dark ? TColors.grey : TColors.darkerGrey, width: 2),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: TColors.primary, width: 2),
-              ),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -153,7 +100,7 @@ class SignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(() => const VerifyEmailScreen()),
+              onPressed: () => controller.signup(),
               child: Text(
                 TTextStrings.createAccount,
                 style: Theme.of(context)

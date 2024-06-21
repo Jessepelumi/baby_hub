@@ -1,7 +1,6 @@
 import 'package:paalii/common/widgets/appbar/appbar.dart';
 import 'package:paalii/utils/constants/colors.dart';
 import 'package:paalii/utils/constants/sizes.dart';
-import 'package:paalii/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AddNewAddress extends StatelessWidget {
@@ -9,7 +8,6 @@ class AddNewAddress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
       appBar: CustomAppBar(
@@ -28,28 +26,12 @@ class AddNewAddress extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Name",
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                          color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 2),
-                    ),
-                    focusedBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: TColors.primary, width: 2),
-                    ),
                   ),
                 ),
                 const SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Phone Number",
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                          color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 2),
-                    ),
-                    focusedBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: TColors.primary, width: 2),
-                    ),
                   ),
                 ),
                 const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -59,15 +41,6 @@ class AddNewAddress extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           labelText: "Street",
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 2),
-                          ),
-                          focusedBorder: const UnderlineInputBorder(
-                            borderSide:
-                                BorderSide(color: TColors.primary, width: 2),
-                          ),
                         ),
                       ),
                     ),
@@ -76,15 +49,6 @@ class AddNewAddress extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           labelText: "Postal Code",
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 2),
-                          ),
-                          focusedBorder: const UnderlineInputBorder(
-                            borderSide:
-                                BorderSide(color: TColors.primary, width: 2),
-                          ),
                         ),
                       ),
                     ),
@@ -97,15 +61,6 @@ class AddNewAddress extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           labelText: "City",
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 2),
-                          ),
-                          focusedBorder: const UnderlineInputBorder(
-                            borderSide:
-                                BorderSide(color: TColors.primary, width: 2),
-                          ),
                         ),
                       ),
                     ),
@@ -114,15 +69,6 @@ class AddNewAddress extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           labelText: "State",
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: dark ? TColors.grey : TColors.darkerGrey,
-                                width: 2),
-                          ),
-                          focusedBorder: const UnderlineInputBorder(
-                            borderSide:
-                                BorderSide(color: TColors.primary, width: 2),
-                          ),
                         ),
                       ),
                     ),
@@ -132,14 +78,6 @@ class AddNewAddress extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Country",
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                          color: dark ? TColors.grey : TColors.darkerGrey,
-                          width: 2),
-                    ),
-                    focusedBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: TColors.primary, width: 2),
-                    ),
                   ),
                 ),
                 const SizedBox(height: TSizes.defaultSpace * 2),
